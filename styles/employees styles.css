@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: rgb(92, 97, 242);
+    --card-bg-color: #FCFEFF;
+    --card-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    --card-radius: 10px;
+
+    --c1: rgb(48, 84, 245);
+    --c1-shadow: rgba(92, 97, 242, 0.2);
+    --c1-shadow2: rgba(92, 97, 242, 0);
+    --c2: rgb(84, 170, 213);
+    --c2-shadow: rgba(84, 170, 213, 0.2);
+    --c2-shadow2: rgba(84, 170, 213, 0);
+    --c3: rgb(97, 174, 65);
+    --c3-shadow: rgba(97, 174, 65, 0.2);
+    --c3-shadow2: rgba(97, 174, 65, 0);
+
+    --succes: #2ECC71;
+    --pending: rgb(238, 161, 29);
+    --canceled: #E74C3C;
+
+    --table-style: rgba(0, 0, 0, 0.03);
+    --pop-up-hover: rgba(220, 220, 220, 0.5);
+    --light-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+
+    --gap1: 15px;
+    --gap2: 20px;
+
+    --large: 2rem;
+    --big: 1.25rem;
+    --default: 1rem;
+    --small: .85rem;
+}
+
+.table-container {
+    width: 100%;
+    overflow: auto;
+}
+
+.table-container h2 {
+    padding: 20px 10px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table tr {
+    border-bottom: 2px solid #ededed;
+}
+
+.table tr:last-child {
+    border: none;
+}
+
+.table td {
+    padding: 10px 5px;
+}
+
+.table .information {
+    display: flex;
+    gap: var(--gap1);
+}
+
+.table .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.table .employee {
+    font-weight: bold;
+}
+
+.table .details {
+    font-size: var(--small);
+    color: #666666;
+    font-weight: 500;
+}
+
+.table .view-btn svg {
+    width: var(--default);
+    height: var(--default);
+}
+
+/* *********************************************** */
+
+.extra-info {
+    padding-top: 55px;
+    display: none;
+}
+
+.card h3 {
+    padding: 30px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.info-container {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title1 {
+    font-size: var(--small);
+    color: #888888;
+    font-weight: 500;
+}
+
+.title2 {
+    font-weight: 600;
+}
+
+.show-i {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

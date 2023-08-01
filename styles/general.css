@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --main-color: rgb(92, 97, 242);
+    --txt: black;
+    --navbars: #FCFEFF;
+    --navbars-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
+
+    --card-bg-color: #FCFEFF;
+    --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --card-radius: 10px;
+
+    --c1: rgb(48, 84, 245);
+    --c1-shadow: rgba(92, 97, 242, 0.2);
+    --c1-shadow2: rgba(92, 97, 242, 0);
+    --c2: rgb(84, 170, 213);
+    --c2-shadow: rgba(84, 170, 213, 0.2);
+    --c2-shadow2: rgba(84, 170, 213, 0);
+    --c3: rgb(97, 174, 65);
+    --c3-shadow: rgba(97, 174, 65, 0.2);
+    --c3-shadow2: rgba(97, 174, 65, 0);
+    --c4: rgb(98, 89, 202);
+    --c4-shadow: rgba(98, 89, 202, 0.2);
+    --c4-shadow2: rgba(98, 89, 202, 0);
+
+    --succes: #2ECC71;
+    --pending: rgb(238, 161, 29);
+    --canceled: #E74C3C;
+
+    --table-style: rgba(0, 0, 0, 0.03);
+    --pop-up-hover: rgba(220, 220, 220, 0.5);
+    --light-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+
+    --gap1: 15px;
+    --gap2: 20px;
+
+    --large: 2rem;
+    --big: 1.25rem;
+    --default: 1rem;
+    --small: .85rem;
+}
+
+body {
+    padding: 70px 10px;
+    background-color: #F5F7FB;
+}
+
+/* ********************************************************************** */
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    opacity: 0.8;
+}
+
+.title {
+    align-self: flex-start;
+    font-weight: bolder;
+    padding: 5px;
+    font-size: var(--big);
+}
+
+.image-container1 {
+    background-color: rgb(184, 184, 184);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-container2 {
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    background-color: rgb(199, 199, 199);
+}
+
+.image-container2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-radius);
+    transition: all 300ms;
+    padding: 5px 15px;
+}
+
+svg {
+    width: 1rem;
+    height: 1rem;
+    transition: all 300ms;
+}
+
+/* ************************************************************************** */
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+    background-color: var(--navbars);
+    box-shadow: var(--navbars-shadow);
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-btn {
+    margin-left: 10px;
+    padding: 7px 14px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(86, 87, 101);
+    border: 1px solid rgb(86, 87, 101);
+    border-radius: 5px;
+    transition: all 300ms ease-out;
+}
+
+.dropdown-btn svg {
+    fill: rgb(86, 87, 101);
+    transition: all 300ms ease-out;
+}
+
+.dropdown-btn:hover {
+    color: var(--txt);
+    border-color: var(--txt);
+}
+
+.dropdown-btn:hover svg {
+    fill: var(--txt);
+}
+
+.dropdown {
+    padding: 10px;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 99;
+
+    background-color: var(--card-bg-color);
+    border-radius: 3px;
+    box-shadow: var(--light-shadow);
+
+    pointer-events: none;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.main-nav-links {
+    width: 10%;
+    display: flex;
+    margin-left: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-nav-links svg {
+    fill: var(--txt);
+    height: 1.15rem;
+    width: 1.15rem;
+}
+
+.user-img1 {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.user-img1:hover {
+    opacity: 0.9;
+}
+
+.user-img1:active {
+    opacity: 0.8;
+}
+
+.user-info {
+    padding: 10px;
+    z-index: 99;
+    position: absolute;
+    top: 100%;
+    right: 5px;
+    background-color: var(--card-bg-color);
+    border-radius: 3px;
+    box-shadow: var(--light-shadow);
+
+    pointer-events: none;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.user-info .user-header,
+.user-info ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.user-info .user-header {
+    border-bottom: 1px dashed rgb(88, 88, 88);
+    padding: 15px 40px;
+}
+
+.user-img2 {
+    width: 80px;
+    height: 80px;
+}
+
+.user-info .user-name {
+    color: black;
+    font-weight: bold;
+}
+
+.user-info .user-gmail {
+    color: gray;
+    font-size: var(--small);
+}
+
+.user-info ul {
+    padding: 15px 3px;
+}
+
+.user-info ul li {
+    width: 100%;
+    padding: 5px;
+}
+
+.user-info .profile-link {
+    text-decoration: none;
+    color: black;
+}
+
+.user-info .profile-link svg {
+    fill: black;
+}
+
+.user-info .profile-link:hover {
+    opacity: 0.9;
+}
+
+.user-info .profile-link:active {
+    opacity: 0.8;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ********************************************************************** */
+
+.side-bar {
+    padding: 5px;
+    background-color: var(--navbars);
+    box-shadow: var(--navbars-shadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+
+    width: 300px;
+    overflow: auto;
+    transition: all 300ms ease-out;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    padding: 5px;
+    height: 50px;
+}
+
+.logo-container img {
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-body,
+.pinned-elements {
+    padding: 10px 5px;
+}
+
+.pinned-elements .pin svg {
+    transform: rotate(45deg);
+}
+
+.pinned {
+    color: var(--txt);
+    text-align: center;
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-link>svg {
+    fill: rgb(86, 87, 101);
+    width: var(--big);
+    height: var(--big);
+}
+
+.nav-link a {
+    font-weight: 500;
+    position: relative;
+    color: rgb(86, 87, 101);
+    text-decoration: none;
+    margin-left: 5px;
+    transition: all 300ms;
+}
+
+.nav-link:hover>svg {
+    fill: var(--txt);
+}
+
+.nav-link:hover a {
+    color: var(--txt);
+    transform: translateX(5px);
+}
+
+.pin {
+    margin-left: auto;
+    opacity: 0;
+    transition: all 100ms;
+}
+
+.pin svg {
+    fill: var(--txt);
+}
+
+.nav-link:hover .pin {
+    opacity: 1;
+}
+
+.open-nav svg {
+    stroke: var(--txt);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.right-arrow {
+    position: relative;
+    fill: var(--txt);
+    transform: translateX(-5px);
+    opacity: 0;
+}
+
+.open-nav {
+    display: flex;
+    align-items: center;
+}
+
+.open-nav:hover .side-bar-icon {
+    transform: rotate(90deg);
+}
+
+.open-nav:hover .right-arrow {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.close-nav svg {
+    fill: var(--txt);
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.close-nav:hover svg {
+    transform: rotate(180deg);
+}
+
+.hide {
+    left: -100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hide2 {
+    opacity: 0;
+    pointer-events: none;
+}

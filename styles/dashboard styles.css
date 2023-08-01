@@ -1,0 +1,616 @@
+:root {
+    --main-color: rgb(92, 97, 242);
+    --txt: black;
+    --navbars: #FCFEFF;
+    --navbars-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
+
+    --card-bg-color: #FCFEFF;
+    --card-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+    --card-radius: 10px;
+
+    --c1: rgb(48, 84, 245);
+    --c1-shadow: rgba(92, 97, 242, 0.2);
+    --c1-shadow2: rgba(92, 97, 242, 0);
+    --c2: rgb(84, 170, 213);
+    --c2-shadow: rgba(84, 170, 213, 0.2);
+    --c2-shadow2: rgba(84, 170, 213, 0);
+    --c3: rgb(97, 174, 65);
+    --c3-shadow: rgba(97, 174, 65, 0.2);
+    --c3-shadow2: rgba(97, 174, 65, 0);
+    --c4: rgb(98, 89, 202);
+    --c4-shadow: rgba(98, 89, 202, 0.2);
+    --c4-shadow2: rgba(98, 89, 202, 0);
+
+    --succes: #2ECC71;
+    --pending: rgb(238, 161, 29);
+    --canceled: #E74C3C;
+
+    --table-style: rgba(0, 0, 0, 0.03);
+    --pop-up-hover: rgba(220, 220, 220, 0.5);
+    --light-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+
+    --gap1: 15px;
+    --gap2: 20px;
+
+    --large: 2rem;
+    --big: 1.25rem;
+    --default: 1rem;
+    --small: .85rem;
+}
+
+/* ********************************************************************** */
+
+.welcome-card {
+    width: 95%;
+    overflow: hidden;
+    transition: all 300ms ease-in;
+}
+
+.welcome-card h1 {
+    color: var(--c1);
+}
+
+.day-information {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.day-information .current-time,
+.day-information .dateDisplay {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 5px 10px;
+    background-color: rgba(48, 84, 245, 0.1);
+    color: var(--c1);
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.day-information svg {
+    height: var(--big);
+    width: var(--big);
+    fill: var(--c1);
+}
+
+.welcome-card:hover {
+    background-color: var(--c1);
+}
+
+.welcome-card:hover h1 {
+    color: white;
+}
+
+.welcome-card:hover svg {
+    fill: white;
+}
+
+.welcome-card:hover .current-time,
+.welcome-card:hover .dateDisplay {
+    color: white;
+}
+
+/* ********************************************************************** */
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap2);
+}
+
+.row1,
+.row3 {
+    width: 95%;
+}
+
+.row1 {
+    display: flex;
+    align-items: stretch;
+    gap: var(--gap1);
+}
+
+.row1--left-side {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
+}
+
+.row1--right-side {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
+}
+
+.mini-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--gap1);
+}
+
+.mini-card {
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    transition: .3s, background-position 0s;
+}
+
+.mtitle {
+    width: 75%;
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+}
+
+.mini-card .stats {
+    font-weight: bolder;
+}
+
+.mini-card1 {
+    background: linear-gradient(var(--c1) 0 0) var(--p1, 0)/var(--p1, 0) no-repeat;
+    background-color: var(--card-bg-color);
+}
+
+.mini-card1 .stats {
+    color: var(--c1);
+}
+
+.mini-card2 {
+    background: linear-gradient(var(--c2) 0 0) var(--p2, 0)/var(--p2, 0) no-repeat;
+    background-color: var(--card-bg-color);
+}
+
+.mini-card2 .stats {
+    color: var(--c2);
+}
+
+.mini-card3 {
+    background: linear-gradient(var(--c3) 0 0) var(--p3, 0)/var(--p3, 0) no-repeat;
+    background-color: var(--card-bg-color);
+}
+
+.mini-card3 .stats {
+    color: var(--c3);
+}
+
+.mini-card4 {
+    background: linear-gradient(var(--c4) 0 0) var(--p4, 0)/var(--p4, 0) no-repeat;
+    background-color: var(--card-bg-color);
+}
+
+.mini-card4 .stats {
+    color: var(--c4);
+}
+
+.mini-card1:hover {
+    --p1: 100%;
+}
+
+.mini-card2:hover {
+    --p2: 100%;
+}
+
+.mini-card3:hover {
+    --p3: 100%;
+}
+
+.mini-card4:hover {
+    --p4: 100%;
+}
+
+.blob {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    box-shadow: 0 0 0 0 rgba(106, 106, 255, 0.15);
+    transition: all 300ms;
+}
+
+.blob svg {
+    fill: white;
+    height: var(--big);
+}
+
+.blob1 {
+    background: var(--c1);
+    animation: pulse1 3s infinite;
+}
+
+.blob2 {
+    background: var(--c2);
+    animation: pulse2 3s infinite;
+}
+
+.blob3 {
+    background: var(--c3);
+    animation: pulse3 3s infinite;
+}
+
+.blob4 {
+    background: var(--c4);
+    animation: pulse4 3s infinite;
+}
+
+.mini-card:hover .blob {
+    animation: none;
+    background-color: transparent;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+
+.mini-card:hover .blob svg {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.mini-card:hover .stats {
+    color: var(--card-bg-color);
+}
+
+@keyframes pulse1 {
+    0% {
+        box-shadow: 0 0 0 0px var(--c1-shadow), 0 0 0 0px var(--c1-shadow);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c1-shadow2), 0 0 0 30px var(--c1-shadow2);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        box-shadow: 0 0 0 0px var(--c2-shadow), 0 0 0 0px var(--c2-shadow);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c1-shadow2), 0 0 0 30px var(--c1-shadow2);
+    }
+}
+
+@keyframes pulse3 {
+    0% {
+        box-shadow: 0 0 0 0px var(--c3-shadow), 0 0 0 0px var(--c3-shadow);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c3-shadow2), 0 0 0 30px var(--c3-shadow2);
+    }
+}
+
+@keyframes pulse4 {
+    0% {
+        box-shadow: 0 0 0 0px var(--c4-shadow), 0 0 0 0px var(--c4-shadow);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c4-shadow2), 0 0 0 30px var(--c4-shadow2);
+    }
+}
+
+.table-card1 {
+    width: 100%;
+    overflow: auto;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table1 th {
+    text-align: left;
+    color: black;
+}
+
+.table1 th {
+    padding: 10px;
+}
+
+.table1 td {
+    padding: 5px 10px;
+}
+
+.table1 tr:nth-of-type(2n) {
+    background-color: var(--table-style);
+}
+
+.table1 .information {
+    display: flex;
+    gap: var(--gap1);
+}
+
+.table1 .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.table1 .text .year {
+    font-size: var(--small);
+}
+
+.table1 tr:hover {
+    color: var(--c2);
+}
+
+.table1 .edit-btn {
+    text-decoration: none;
+    color: black;
+}
+
+.table1 .edit-btn:hover {
+    opacity: 0.9;
+}
+
+.side-card {
+    overflow: auto;
+}
+
+.side-table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+}
+
+.side-table td {
+    padding: 5px 10px;
+}
+
+.side-table tr:nth-of-type(2n) {
+    background-color: var(--table-style);
+}
+
+.side-table .information {
+    display: flex;
+    gap: var(--gap1);
+}
+
+.side-table .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-table .name {
+    font-weight: bold;
+}
+
+.side-table .text .n-of {
+    font-size: var(--small);
+}
+
+.side-table tr:hover {
+    color: var(--c3);
+}
+
+/* ****************************************************************** */
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap1);
+}
+
+.card1,
+.card2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.growth-rate1,
+.growth-rate2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* ****************************************************************** */
+
+.table-card2 {
+    width: 100%;
+    overflow: auto;
+}
+
+.table2 {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+}
+
+.table2 th {
+    text-align: left;
+    padding: 10px;
+    color: black;
+}
+
+.table2 td {
+    padding: 5px 10px;
+}
+
+.table2 tr:nth-of-type(2n) {
+    background-color: var(--table-style);
+}
+
+.table2 tr:hover {
+    color: var(--c1);
+    fill: var(--c1);
+}
+
+.table2 .id {
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 7px;
+    background-color: rgba(48, 84, 245, 0.15);
+    color: var(--c1);
+}
+
+.table2 .status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: var(--small);
+    font-weight: bold;
+    width: fit-content;
+}
+
+.table2 .succes {
+    background-color: #2ecc701a;
+    color: var(--succes);
+}
+
+.table2 .pending {
+    background-color: #ffd9001a;
+    color: var(--pending);
+}
+
+.table2 .canceled {
+    background-color: #E74C3C1a;
+    color: var(--canceled);
+}
+
+/* ***************************************************************************************** */
+
+@media (max-width:1300px) {
+    .row1 {
+        flex-direction: column;
+    }
+
+    .row1--left-side,
+    .row1--right-side {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .row3 {
+        flex-direction: column;
+    }
+
+    .table-card2 {
+        width: 100%;
+    }
+}
+
+@media (max-width:700px) {
+    .main-nav-links {
+        width: 55%;
+    }
+
+    .charts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap1);
+    }
+
+    .card1,
+    .card2 {
+        width: 100%;
+    }
+
+    .mini-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:400px) {
+    .main-nav {
+        padding: 3px;
+    }
+
+    .main-nav-links {
+        width: 75%;
+    }
+
+    .search {
+        padding: 5px;
+    }
+
+    .messages {
+        padding: 5px;
+    }
+
+    .notifications {
+        padding: 5px;
+    }
+
+    .user-info {
+        padding: 5px;
+    }
+
+    .side-bar {
+        width: 95%;
+    }
+
+    .day-information {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:300px) {
+    .main-nav-links {
+        width: 90%;
+    }
+
+    .search,
+    .notifications,
+    .messages,
+    .user-info {
+        right: 0;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search button {
+        margin: 0 auto;
+    }
+
+    .user-info {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .side-bar {
+        width: 100%;
+    }
+}
+
+@media (max-width:200px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav-links {
+        width: 100%;
+    }
+}
