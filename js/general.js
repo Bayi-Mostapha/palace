@@ -86,14 +86,16 @@ const dropDown = document.querySelector('.dropdown');
 
 userBtn.addEventListener('click', () => {
     userInfo.classList.toggle('show');
+    dropDown.classList.remove('show');
 
 });
 userInfo.addEventListener('mouseleave', () => {
     userInfo.classList.remove('show');
 });
 
-dropBtn.addEventListener('click', () => {
-    dropDown.classList.toggle('show');
+dropBtn.addEventListener('mouseover', () => {
+    dropDown.classList.add('show');
+    userInfo.classList.remove('show');
 
 });
 dropDown.addEventListener('mouseleave', () => {

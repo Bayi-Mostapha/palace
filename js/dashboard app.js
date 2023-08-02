@@ -54,7 +54,6 @@ new Chart(ctx1, {
     },
     options: {
         hitRadius: 30,
-        responsive: true,
         scales: {
             y: {
                 beginAtZero: true
@@ -82,7 +81,6 @@ new Chart(ctx2, {
     },
     options: {
         hitRadius: 30,
-        responsive: true,
         scales: {
             y: {
                 beginAtZero: true
