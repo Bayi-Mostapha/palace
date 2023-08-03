@@ -10,11 +10,15 @@
 </head>
 
 <body>
+    <h1>edit employee</h1>
     <div class="form-container card">
-        <h2>edit employee</h2>
         <form action="">
             <div class="form-upper-part">
                 <div class="upper-left-side">
+                    <div class="employee-img">
+                        <img src="https://st3.depositphotos.com/1017228/18878/i/600/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg"
+                            alt="">
+                    </div>
                     <div class="f-input-container">
                         <div class="icon-container">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -61,31 +65,63 @@
                 </div>
                 <div class="input">
                     <label for="">Address</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
                 </div>
-                <div class="input">
-                    <label for="">Country</label>
-                    <select id="">
-                        <option value="">Angola</option>
-                        <option value="">Cap Verte</option>
-                        <option value="">Egypt</option>
-                        <option value="">France</option>
-                        <option value="">Morocco</option>
-                        <option value="">Portugal</option>
-                        <option value="">Turcky</option>
-                    </select>
+                <div class="input select-container">
+                    <p>Country</p>
+                    <div class="selected-item">
+                        <p>select one</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                    <div class="select">
+                        <div class="option">
+                            <input type="radio" name="country" value="maroc" class="opt-radio" id="country-option1">
+                            <label for="country-option1">maroc</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="country" value="france" class="opt-radio" id="country-option2">
+                            <label for="country-option2">france</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="country" value="uk" class="opt-radio" id="country-option3">
+                            <label for="country-option3">uk</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="input">
-                    <label for="">State</label>
-                    <select id="">
-
-                    </select>
+                <div class="input select-container">
+                    <p>State</p>
+                    <div class="selected-item">
+                        <p>select one</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                    <div class="select">
+                        <div class="option disabled">
+                            <input type="radio" name="state" value="null" class="opt-radio" id="state-option1">
+                            <label for="state-option1">no results</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="input">
-                    <label for="">City</label>
-                    <select id="">
-
-                    </select>
+                <div class="input select-container">
+                    <p>City</p>
+                    <div class="selected-item">
+                        <p>select one</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                    <div class="select">
+                        <div class="option disabled">
+                            <input type="radio" name="city" value="null" class="opt-radio" id="city-option1">
+                            <label for="city-option1">no results</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="input">
                     <label for="">Date of Birth</label>
@@ -95,23 +131,54 @@
                     <label for="">Employee ID</label>
                     <input type="text" placeholder="please enter employee ID">
                 </div>
-                <div class="input">
-                    <label for="">Department</label>
-                    <select id="">
-
-                    </select>
+                <div class="input select-container">
+                    <p>Department</p>
+                    <div class="selected-item">
+                        <p>select one</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                    <div class="select">
+                        <div class="option disabled">
+                            <input type="radio" name="department" value="null" class="opt-radio"
+                                id="department-option1">
+                            <label for="department-option1">no results</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="input">
-                    <label for="">Position</label>
-                    <select id="">
-
-                    </select>
+                <div class="input select-container">
+                    <p>Position</p>
+                    <div class="selected-item">
+                        <p>select one</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                    <div class="select">
+                        <div class="option disabled">
+                            <input type="radio" name="position" value="null" class="opt-radio" id="position-option1">
+                            <label for="position-option1">no results</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="input">
-                    <label for="">Role</label>
-                    <select id="">
-
-                    </select>
+                <div class="input select-container">
+                    <p>Role</p>
+                    <div class="selected-item">
+                        <p>select one</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                    <div class="select">
+                        <div class="option disabled">
+                            <input type="radio" name="role" value="null" class="opt-radio" id="role-option1">
+                            <label for="role-option1">no results</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="input">
                     <label for="">Account Holder Name</label>
@@ -143,8 +210,20 @@
                 </div>
             </div>
             <div class="form-btns">
-                <input type="submit">
-                <input type="reset">
+                <button type="reset" class="btn reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M142.9 142.9c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5c0 0 0 0 0 0H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM16 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L185 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H48.4h-.7H40c-13.3 0-24 10.7-24 24z" />
+                    </svg>
+                    Reset
+                </button>
+                <button type="submit" class="btn submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                    </svg>
+                    Save
+                </button>
             </div>
         </form>
     </div>
