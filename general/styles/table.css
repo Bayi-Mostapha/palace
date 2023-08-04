@@ -92,9 +92,8 @@ html {
     font-weight: 500;
 }
 
-.table .view-btn svg {
-    width: var(--default);
-    height: var(--default);
+.table .view-btn i {
+    font-size: var(--default);
 }
 
 /* *********************************************** */
@@ -171,8 +170,8 @@ html {
     background-color: rgba(48, 84, 245, 0.05);
 }
 
-.dropdown-btn svg {
-    fill: black;
+.dropdown-btn i {
+    color: black;
 }
 
 .dropdown {

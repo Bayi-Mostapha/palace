@@ -70,10 +70,9 @@
     border-radius: 15px;
 }
 
-.day-information svg {
-    height: var(--big);
-    width: var(--big);
-    fill: var(--c1);
+.day-information i {
+    font-size: var(--big);
+    color: var(--c1);
 }
 
 .welcome-card:hover {
@@ -84,8 +83,8 @@
     color: white;
 }
 
-.welcome-card:hover svg {
-    fill: white;
+.welcome-card:hover i {
+    color: white;
 }
 
 .welcome-card:hover .current-time,
@@ -227,9 +226,9 @@
     transition: all 300ms;
 }
 
-.blob svg {
-    fill: white;
-    height: var(--big);
+.blob i {
+    color: white;
+    font-size: var(--big);
 }
 
 .blob1 {
@@ -259,9 +258,8 @@
     transform: translate(-20%, -50%);
 }
 
-.mini-card:hover .blob svg {
-    width: 2.25rem;
-    height: 2.25rem;
+.mini-card:hover .blob i {
+    font-size: 2.25rem;
 }
 
 .mini-card:hover .stats {
@@ -453,9 +451,16 @@
     background-color: var(--table-style);
 }
 
+.table2 i {
+    color: rgb(198, 199, 204);
+}
+
 .table2 tr:hover {
     color: var(--c1);
-    fill: var(--c1);
+}
+
+.table2 tr:hover i {
+    color: var(--c1);
 }
 
 .table2 .id {

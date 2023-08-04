@@ -43,11 +43,11 @@
     right: 20px;
 }
 
-.close-pop-up svg {
+.close-pop-up i {
     transition: all 300ms;
 }
 
-.close-pop-up:hover svg {
+.close-pop-up:hover i {
     transform: rotate(180deg);
 }
 

@@ -137,9 +137,8 @@ ul {
     padding: 5px 15px;
 }
 
-svg {
-    width: 1rem;
-    height: 1rem;
+i {
+    font-size: 1rem;
     transition: all 300ms;
 }
 
@@ -246,8 +245,8 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-.selected-item svg {
-    fill: rgb(236, 237, 248);
+.selected-item i {
+    color: rgb(236, 237, 248);
 }
 
 .select {
@@ -335,8 +334,8 @@ input[type="radio"] {
     background-color: rgba(48, 84, 245, 0.1);
 }
 
-.nav-dropdown-btn svg {
-    fill: var(--c1);
+.nav-dropdown-btn i {
+    color: var(--c1);
     transition: all 300ms ease-out;
 }
 
@@ -385,8 +384,8 @@ input[type="radio"] {
     align-items: center;
 }
 
-.main-nav-links svg {
-    fill: var(--txt);
+.main-nav-links i {
+    color: var(--txt);
     height: 1.15rem;
     width: 1.15rem;
 }
@@ -463,8 +462,8 @@ input[type="radio"] {
     color: black;
 }
 
-.user-info .profile-link svg {
-    fill: black;
+.user-info .profile-link i {
+    color: black;
 }
 
 .user-info .profile-link:hover {
@@ -497,6 +496,16 @@ input[type="radio"] {
     transition: all 300ms ease-out;
 }
 
+.side-bar {
+    scrollbar-width: none;
+}
+
+.side-bar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -520,7 +529,7 @@ input[type="radio"] {
     padding: 10px 5px;
 }
 
-.pinned-elements .pin svg {
+.pinned-elements .pin i {
     transform: rotate(45deg);
 }
 
@@ -536,16 +545,14 @@ input[type="radio"] {
     padding: 10px;
 }
 
-.nav-link>svg,
-.nav-link .nav-link-content>svg {
-    fill: rgb(86, 87, 101);
-    width: var(--big);
-    height: var(--big);
+.nav-link>i,
+.nav-link .nav-link-content>i {
+    color: rgb(86, 87, 101);
+    font-size: var(--big);
 }
 
 .submenu-state {
-    width: var(--small) !important;
-    height: var(--small) !important;
+    font-size: var(--small);
     transition: all 300ms;
 }
 
@@ -553,9 +560,9 @@ input[type="radio"] {
     transform: rotate(90deg);
 }
 
-.nav-link:hover>svg,
-.nav-link .nav-link-content:hover>svg {
-    fill: var(--txt);
+.nav-link:hover>i,
+.nav-link .nav-link-content:hover>i {
+    color: var(--txt);
 }
 
 .nav-link>a,
@@ -581,10 +588,9 @@ input[type="radio"] {
     transition: all 100ms;
 }
 
-.pin svg {
-    fill: var(--txt);
-    width: var(--small);
-    height: var(--small);
+.pin i {
+    color: var(--txt);
+    font-size: var(--small);
 }
 
 .no-submenu .pin {
@@ -626,10 +632,9 @@ input[type="radio"] {
     gap: 5px;
 }
 
-.submenu a svg {
-    height: var(--small);
-    width: var(--small);
-    fill: rgb(86, 87, 101);
+.submenu a i {
+    font-size: var(--small);
+    color: rgb(86, 87, 101);
     transition: all 300ms;
 }
 
@@ -637,8 +642,8 @@ input[type="radio"] {
     color: black;
 }
 
-.submenu a:hover svg {
-    fill: black;
+.submenu a:hover i {
+    color: black;
 }
 
 .show-submenu {
@@ -648,15 +653,9 @@ input[type="radio"] {
 
 /* ************************************ */
 
-.open-nav svg {
-    stroke: var(--txt);
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
 .right-arrow {
     position: relative;
-    fill: var(--txt);
+    color: var(--txt);
     transform: translateX(-5px);
     opacity: 0;
 }
@@ -664,6 +663,13 @@ input[type="radio"] {
 .open-nav {
     display: flex;
     align-items: center;
+    gap: 5px;
+    margin-right: 5px;
+}
+
+.open-nav i {
+    color: var(--txt);
+    font-size: var(--big);
 }
 
 .open-nav:hover .side-bar-icon {
@@ -675,13 +681,12 @@ input[type="radio"] {
     opacity: 1;
 }
 
-.close-nav svg {
-    fill: var(--txt);
-    width: 1.7rem;
-    height: 1.7rem;
+.close-nav i {
+    color: var(--txt);
+    font-size: var(--big);
 }
 
-.close-nav:hover svg {
+.close-nav:hover i {
     transform: rotate(180deg);
 }
 
