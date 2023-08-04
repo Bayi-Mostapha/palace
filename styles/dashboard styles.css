@@ -473,7 +473,7 @@
 
 .table2 .status {
     padding: 5px 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 0 auto;
     font-size: var(--small);
     font-weight: bold;
