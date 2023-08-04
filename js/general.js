@@ -81,8 +81,8 @@ function updateDOM() {
 const userBtn = document.querySelector('.user-img1');
 const userInfo = document.querySelector('.user-info');
 
-const dropBtn = document.querySelector('.dropdown-btn');
-const dropDown = document.querySelector('.dropdown');
+const dropBtn = document.querySelector('.nav-dropdown-btn');
+const dropDown = document.querySelector('.nav-dropdown');
 
 userBtn.addEventListener('click', () => {
     userInfo.classList.toggle('show');
@@ -116,4 +116,17 @@ closeNav.addEventListener('click', () => {
 openNav.addEventListener('click', () => {
     sideNav.classList.remove('hide');
     openNav.classList.add('hide2');
+});
+
+// ********************************************************************
+
+const submenuBtns = document.querySelectorAll('.submenu-btn');
+
+submenuBtns.forEach(submenuBtn => {
+    submenuBtn.addEventListener('click', () => {
+        const submenu = submenuBtn.querySelector('.submenu');
+        const submenuState = submenuBtn.querySelector('.submenu-state');
+        submenu.classList.toggle('show-submenu');
+        submenuState.classList.toggle('rotate');
+    });
 });
