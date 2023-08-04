@@ -81,41 +81,60 @@ function updateDOM() {
 const userBtn = document.querySelector('.user-img1');
 const userInfo = document.querySelector('.user-info');
 
-const dropBtn = document.querySelector('.nav-dropdown-btn');
-const dropDown = document.querySelector('.nav-dropdown');
+// const dropBtn = document.querySelector('.nav-dropdown-btn');
+// const dropDown = document.querySelector('.nav-dropdown');
 
 userBtn.addEventListener('click', () => {
     userInfo.classList.toggle('show');
-    dropDown.classList.remove('show');
+    // dropDown.classList.remove('show');
 
 });
 userInfo.addEventListener('mouseleave', () => {
     userInfo.classList.remove('show');
 });
 
-dropBtn.addEventListener('mouseover', () => {
-    dropDown.classList.add('show');
-    userInfo.classList.remove('show');
+// dropBtn.addEventListener('click', () => {
+//     dropDown.classList.toggle('show');
+//     userInfo.classList.remove('show');
 
-});
-dropDown.addEventListener('mouseleave', () => {
-    dropDown.classList.remove('show');
-});
+// });
+// dropDown.addEventListener('mouseleave', () => {
+//     dropDown.classList.remove('show');
+// });
 
 // ****************************************************************************
 
+const mainContent = document.querySelector('main');
+const mainNav = document.querySelector('.main-nav');
 const closeNav = document.querySelector('.close-nav');
 const openNav = document.querySelector('.open-nav');
 const sideNav = document.querySelector('.side-bar');
 
+
 closeNav.addEventListener('click', () => {
-    sideNav.classList.add('hide');
     openNav.classList.remove('hide2');
+
+    sideNav.classList.add('hide');
+    sideNav.classList.remove('side-bar-opened');
+    sideNav.classList.add('side-bar-closed');
+
+    mainContent.classList.add('side-bar-closed');
+    mainNav.classList.add('side-bar-closed');
+    mainContent.classList.remove('side-bar-opened');
+    mainNav.classList.remove('side-bar-opened');
 });
 
 openNav.addEventListener('click', () => {
-    sideNav.classList.remove('hide');
     openNav.classList.add('hide2');
+
+    sideNav.classList.remove('hide');
+    sideNav.classList.add('side-bar-opened');
+    sideNav.classList.remove('side-bar-closed');
+
+    mainContent.classList.remove('side-bar-closed');
+    mainNav.classList.remove('side-bar-closed');
+    mainContent.classList.add('side-bar-opened');
+    mainNav.classList.add('side-bar-opened');
 });
 
 // ********************************************************************
