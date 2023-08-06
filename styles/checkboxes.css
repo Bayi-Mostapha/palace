@@ -1,0 +1,22 @@
+.card h2 {
+    font-weight: 500;
+    font-size: var(--small);
+    color: var(--gray-txt);
+    margin-top: 10px;
+}
+
+#role-name-label {
+    font-size: var(--small);
+    color: var(--gray-txt);
+}
+
+.select-all-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+tr p {
+    display: inline;
+    text-transform: capitalize;
+}

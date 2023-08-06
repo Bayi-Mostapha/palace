@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- this has navbar styles and other general styles so it should be included in every page -->
     <link rel="stylesheet" href="./styles/general.css">
-    <!-- this has some general table styles -->
     <link rel="stylesheet" href="./styles/table.css">
-    <!-- this has styles specific to this page -->
-    <link rel="stylesheet" href="./styles/attendance.css">
     <title>table</title>
 </head>
 
 <body>
-    <!-- navigation bars, top screen and side  -->
+    <!-- nav bars  -->
     <header class="main-nav main-nav-margin-left side-bar-closed">
         <button class="open-nav btn">
             <i class="fa-solid fa-border-all side-bar-icon"></i>
@@ -182,22 +178,18 @@
             </div>
         </div>
     </nav>
-    <!--  -->
-    <!-- the intire page content shouls go isinde a container with the same classes as main  -->
+    <!-- main  -->
     <main class="main-margin-left side-bar-closed">
-        <a href="" class="default-btn"><i class="fa-solid fa-plus"></i> add attendance</a>
+        <a href="" class="default-btn"><i class="fa-solid fa-plus"></i> add employee</a>
         <div class="table-container card">
             <table class="table">
                 <tr>
                     <th>id</th>
                     <th>employee</th>
-                    <th>date</th>
-                    <th>check in</th>
-                    <th>check out</th>
-                    <th>longitude</th>
-                    <th>latitude</th>
+                    <th>company</th>
+                    <th>email</th>
+                    <th>mobile</th>
                     <th>status</th>
-                    <th>state</th>
                     <th>action</th>
                 </tr>
                 <tr>
@@ -209,24 +201,21 @@
                         </div>
                         <div class="text">
                             <p class="employee">Mostapha Bayi</p>
-                            <p class="job">example@gmail.com</p>
+                            <p class="job">Software engineer</p>
                         </div>
                     </td>
                     <td>
-                        2023-08-03
+                        palace digital
                     </td>
                     <td>
-                        <p class="positive-check-time">8:00am</p>
+                        example@gmail.com
                     </td>
                     <td>
-                        <p class="positive-check-time">5:00pm</p>
+                        0612324351
                     </td>
-                    <td></td>
-                    <td></td>
                     <td>
-                        <p class="status positive">present</p>
+                        <input type="checkbox">
                     </td>
-                    <td></td>
                     <td>
                         <div class="dropdown-container">
                             <button class="btn dropdown-btn">
@@ -235,24 +224,16 @@
                             </button>
                             <div class="dropdown">
                                 <a href="">
+                                    <i class="fa-solid fa-bars-progress"></i>
+                                    attendance
+                                </a>
+                                <a href="">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                     edit
                                 </a>
                                 <a href="">
                                     <i class="fa-solid fa-trash"></i>
                                     delete
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    reject
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    approve
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    download video
                                 </a>
                             </div>
                         </div>
@@ -269,25 +250,22 @@
                                 alt="">
                         </div>
                         <div class="text">
-                            <p class="employee">salma Alaoui</p>
-                            <p class="job">example@gmail.com</p>
+                            <p class="employee">Reda Alaoui</p>
+                            <p class="job">Software engineer</p>
                         </div>
                     </td>
                     <td>
-                        2023-08-03
+                        palace digital
                     </td>
                     <td>
-                        <p class="positive-check-time">8:05am</p>
+                        example@gmail.com
                     </td>
                     <td>
-                        <p class="positive-check-time">6:15pm</p>
+                        0612324351
                     </td>
-                    <td></td>
-                    <td></td>
                     <td>
-                        <p class="status positive">present</p>
+                        <input type="checkbox">
                     </td>
-                    <td></td>
                     <td>
                         <div class="dropdown-container">
                             <button class="btn dropdown-btn">
@@ -296,24 +274,16 @@
                             </button>
                             <div class="dropdown">
                                 <a href="">
+                                    <i class="fa-solid fa-bars-progress"></i>
+                                    attendance
+                                </a>
+                                <a href="">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                     edit
                                 </a>
                                 <a href="">
                                     <i class="fa-solid fa-trash"></i>
                                     delete
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    reject
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    approve
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    download video
                                 </a>
                             </div>
                         </div>
@@ -330,24 +300,21 @@
                         </div>
                         <div class="text">
                             <p class="employee">Sanae Mahmoud</p>
-                            <p class="job">example@gmail.com</p>
+                            <p class="job">Full stack developer</p>
                         </div>
                     </td>
                     <td>
-                        2023-08-03
+                        palace digital
                     </td>
                     <td>
-                        <p class="neutral-check-time">9:00am</p>
+                        example@gmail.com
                     </td>
                     <td>
-                        <p class="neutral-check-time">3:00pm</p>
+                        0612324351
                     </td>
-                    <td></td>
-                    <td></td>
                     <td>
-                        <p class="status neutral">not required</p>
+                        <input type="checkbox">
                     </td>
-                    <td></td>
                     <td>
                         <div class="dropdown-container">
                             <button class="btn dropdown-btn">
@@ -356,24 +323,16 @@
                             </button>
                             <div class="dropdown">
                                 <a href="">
+                                    <i class="fa-solid fa-bars-progress"></i>
+                                    attendance
+                                </a>
+                                <a href="">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                     edit
                                 </a>
                                 <a href="">
                                     <i class="fa-solid fa-trash"></i>
                                     delete
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    reject
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    approve
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    download video
                                 </a>
                             </div>
                         </div>
@@ -390,24 +349,21 @@
                         </div>
                         <div class="text">
                             <p class="employee">Khalid Nour</p>
-                            <p class="job">example@gmail.com</p>
+                            <p class="job">Designer</p>
                         </div>
                     </td>
                     <td>
-                        2023-08-03
+                        palace digital
                     </td>
                     <td>
-                        <p class="absent-time">absent</p>
+                        example@gmail.com
                     </td>
                     <td>
-                        <p class="absent-time">absent</p>
+                        0612324351
                     </td>
-                    <td></td>
-                    <td></td>
                     <td>
-                        <p class="status negative">absent</p>
+                        <input type="checkbox">
                     </td>
-                    <td></td>
                     <td>
                         <div class="dropdown-container">
                             <button class="btn dropdown-btn">
@@ -416,24 +372,16 @@
                             </button>
                             <div class="dropdown">
                                 <a href="">
+                                    <i class="fa-solid fa-bars-progress"></i>
+                                    attendance
+                                </a>
+                                <a href="">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                     edit
                                 </a>
                                 <a href="">
                                     <i class="fa-solid fa-trash"></i>
                                     delete
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    reject
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    approve
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-bars-progress"></i>
-                                    download video
                                 </a>
                             </div>
                         </div>
@@ -443,14 +391,9 @@
             </table>
         </div>
     </main>
-    <!--  -->
     <script src="https://kit.fontawesome.com/a0929f6f84.js" crossorigin="anonymous"></script>
-    <!-- navbar and other general logic  -->
     <script src="./js/general.js"></script>
     <script src="./js/dark mode.js"></script>
-    <!-- form logic, select (dropdown) and other -->
-    <script src="./js/form app.js"></script>
-    <!-- table logic drop down (action colomn) -->
     <script src="./js/table.js"></script>
 </body>
 

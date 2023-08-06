@@ -81,26 +81,12 @@ function updateDOM() {
 const userBtn = document.querySelector('.user-img1');
 const userInfo = document.querySelector('.user-info');
 
-// const dropBtn = document.querySelector('.nav-dropdown-btn');
-// const dropDown = document.querySelector('.nav-dropdown');
-
 userBtn.addEventListener('click', () => {
     userInfo.classList.toggle('show');
-    // dropDown.classList.remove('show');
-
 });
 userInfo.addEventListener('mouseleave', () => {
     userInfo.classList.remove('show');
 });
-
-// dropBtn.addEventListener('click', () => {
-//     dropDown.classList.toggle('show');
-//     userInfo.classList.remove('show');
-
-// });
-// dropDown.addEventListener('mouseleave', () => {
-//     dropDown.classList.remove('show');
-// });
 
 // ****************************************************************************
 
@@ -147,5 +133,16 @@ submenuBtns.forEach(submenuBtn => {
         const submenuState = submenuBtn.querySelector('.submenu-state');
         submenu.classList.toggle('show-submenu');
         submenuState.classList.toggle('rotate');
+    });
+});
+
+// ********************************************************************
+
+const switchContainers = document.querySelectorAll('.switch-container');
+
+switchContainers.forEach(switchContainer => {
+    switchContainer.addEventListener('click', () => {
+        const switchBtn = switchContainer.querySelector('.switch-btn');
+        switchBtn.classList.toggle('on');
     });
 });

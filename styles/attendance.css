@@ -1,45 +1,3 @@
-:root {
-    --main-color: rgb(92, 97, 242);
-    --txt: black;
-    --navbars: #ffffff;
-    --navbars-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
-
-    --card-bg-color: #ffffff;
-    --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-    --card-radius: 10px;
-
-    --c1: rgb(48, 84, 245);
-    --c1-shadow: rgba(92, 97, 242, 0.2);
-    --c1-shadow2: rgba(92, 97, 242, 0);
-    --c2: rgb(84, 170, 213);
-    --c2-shadow: rgba(84, 170, 213, 0.2);
-    --c2-shadow2: rgba(84, 170, 213, 0);
-    --c3: rgb(97, 174, 65);
-    --c3-shadow: rgba(97, 174, 65, 0.2);
-    --c3-shadow2: rgba(97, 174, 65, 0);
-    --c4: rgb(98, 89, 202);
-    --c4-shadow: rgba(98, 89, 202, 0.2);
-    --c4-shadow2: rgba(98, 89, 202, 0);
-
-    --positive: #2ECC71;
-    --neutral: rgb(238, 161, 29);
-    --negative: #E74C3C;
-
-    --table-style: rgba(0, 0, 0, 0.03);
-    --pop-up-hover: rgba(220, 220, 220, 0.5);
-    --light-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
-
-    --gap1: 15px;
-    --gap2: 20px;
-
-    --large: 2rem;
-    --big: 1.25rem;
-    --default: 1rem;
-    --small: .85rem;
-}
-
-/* *************************************************** */
-
 .positive-check-time {
     width: 100%;
     padding: 10px;
@@ -94,6 +52,7 @@
 }
 
 .dropdown a {
+    color: var(--txt);
     padding: 4px 10px;
 }
 

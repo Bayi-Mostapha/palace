@@ -102,15 +102,15 @@ function grContent(chartData) {
     return `
         <p>
             Last month:
-            <i style="color:${lastMonth > 0 ? 'var(--succes)' : 'var(--canceled)'};transform: rotate(${lastMonth > 0 ? '-90deg' : '90deg'});" class="fa-solid fa-arrow-right"></i>
-            <span style="color:${lastMonth > 0 ? 'var(--succes)' : 'var(--canceled)'}">
+            <i style="color:${lastMonth >= 0 ? 'var(--positive)' : 'var(--negative)'};transform: rotate(${lastMonth >= 0 ? '-90deg' : '90deg'});" class="fa-solid fa-arrow-right"></i>
+            <span style="color:${lastMonth >= 0 ? 'var(--positive)' : 'var(--negative)'}">
                 ${lastMonth > 0 ? '+' : ''}${lastMonth}%
             </span>
             </p>
         <p>
             Last 6 months:
-            <i style="color:${last6Months > 0 ? 'var(--succes)' : 'var(--canceled)'};transform: rotate(${last6Months > 0 ? '-90deg' : '90deg'});" class="fa-solid fa-arrow-right"></i>
-            <span style="color:${last6Months > 0 ? 'var(--succes)' : 'var(--canceled)'}">
+            <i style="color:${last6Months >= 0 ? 'var(--positive)' : 'var(--negative)'};transform: rotate(${last6Months >= 0 ? '-90deg' : '90deg'});" class="fa-solid fa-arrow-right"></i>
+            <span style="color:${last6Months >= 0 ? 'var(--positive)' : 'var(--negative)'}">
                 ${last6Months > 0 ? '+' : ''}${last6Months}%
             </span>
         </p>
