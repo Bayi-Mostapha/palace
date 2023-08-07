@@ -1,3 +1,8 @@
+td,
+th {
+    padding: 15px !important;
+}
+
 .positive-check-time {
     width: 100%;
     padding: 10px;
@@ -53,7 +58,7 @@
 
 .dropdown a {
     color: var(--txt);
-    padding: 4px 10px;
+    padding: 5px 10px;
 }
 
 @media (max-width:1100px) {

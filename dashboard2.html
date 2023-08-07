@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- general is important in all files, dashboard is for the dashboard -->
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/dashboard2.css">
+    <title>admin dashboard</title>
+</head>
+
+<body>
+    <!-- nav bars  -->
+    <header class="main-nav main-nav-margin-left side-bar-closed">
+        <button class="open-nav btn">
+            <i class="fa-solid fa-border-all side-bar-icon"></i>
+            <i class="fa-solid fa-angle-right right-arrow"></i>
+        </button>
+        <div class="input select-container">
+            <div class="selected-item">
+                <p>palace agency</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="select">
+                <div class="option selected">
+                    <input type="radio" name="agency" checked value="palace agency" class="opt-radio"
+                        id="agency-option1">
+                    <label for="agency-option1">palace agency</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="agency" value="network agency" class="opt-radio" id="agency-option2">
+                    <label for="agency-option2">network agency</label>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav-links">
+            <button class="btn theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="btn" id="fullscreenButton">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+            <div class="user-img1 image-container1">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="user">
+            </div>
+        </div>
+
+        <div class="user-info">
+            <div class="user-header">
+                <div class="user-img2 image-container1">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="user">
+                </div>
+                <p class="user-name">fname lname</p>
+                <p class="user-gmail">admin@example.com</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="" class="profile-link">
+                        <i class="fa-solid fa-user"></i>
+                        profile
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="profile-link">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        edit profile
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="profile-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="side-bar hide side-bar-closed">
+        <div class="nav-header">
+            <div class="logo-container">
+                <img src="https://images.vexels.com/media/users/3/142789/isolated/preview/2bfb04ad814c4995f0c537c68db5cd0b-multicolor-swirls-circle-logo.png"
+                    alt="logo">
+            </div>
+            <button class="close-nav btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div>
+            <h4 class="pinned"></h4>
+            <div class="pinned-elements"></div>
+            <div class="break"></div>
+        </div>
+        <div class="nav-body">
+            <div class="nav-link no-submenu curr-page">
+                <i class="fa-solid fa-house-user"></i>
+                <a href="">dashboard</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link submenu-btn">
+                <div class="nav-link-content">
+                    <i class="fa-solid fa-users"></i>
+                    <p>users</p>
+                    <button class="btn pin">
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </button>
+                    <i class="fa-solid fa-angle-right submenu-state"></i>
+                </div>
+                <div class="submenu">
+                    <a href="">
+                        <i class="fa-solid fa-angle-right"></i>
+                        all users
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-angle-right"></i>
+                        roles and permissions
+                    </a>
+                </div>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-briefcase"></i>
+                <a href="">employees</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <a href="">attendance</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-building-user"></i>
+                <a href="">departments</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-cubes"></i>
+                <a href="">projects</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-users-line"></i>
+                <a href="">clients</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-list-check"></i>
+                <a href="">tasks</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-chart-column"></i>
+                <a href="">charts</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+            <div class="nav-link no-submenu">
+                <i class="fa-solid fa-gear"></i>
+                <a href="">settings</a>
+                <button class="btn pin">
+                    <i class="fa-solid fa-thumbtack"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- main  -->
+    <main class="main-margin-left side-bar-closed">
+        <div class="welcome-card card">
+            <h1>Welcome to the dashboard <span class="user-name">Fname</span></h1>
+            <div class="day-information">
+                <div class="current-time"></div>
+                <div class="dateDisplay"></div>
+            </div>
+        </div>
+        <div class="mini-cards">
+            <div class="mini-card mini-card1 card">
+                <div class="blob blob1">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <span class="mtitle">Total Salaries</span>
+                <span class="stats">15000 DH</span>
+            </div>
+            <div class="mini-card mini-card2 card">
+                <div class="blob blob2">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                </div>
+                <span class="mtitle">Total Expense</span>
+                <span class="stats">14000 DH</span>
+            </div>
+            <div class="mini-card mini-card3 card">
+                <div class="blob blob3">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <span class="mtitle">Total Invoice Clients</span>
+                <span class="stats">1</span>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="card1 card">
+                <span class="title">title &centerdot;</span>
+                <canvas id="Chart1"></canvas>
+            </div>
+            <div class="card2 card">
+                <span class="title">title &centerdot;</span>
+                <canvas id="Chart2"></canvas>
+            </div>
+            <div class="card3 card">
+                <span class="title">title &centerdot;</span>
+                <canvas id="Chart3"></canvas>
+            </div>
+            <div class="card4 card">
+                <span class="title">title &centerdot;</span>
+                <canvas id="Chart4"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a0929f6f84.js" crossorigin="anonymous"></script>
+    <script src="./js/general.js"></script>
+    <script src="./js/dark mode.js"></script>
+
+    <script src="./js/dashboard2.js"></script>
+    <script src="./js/form app.js"></script>
+</body>
+
+</html>
