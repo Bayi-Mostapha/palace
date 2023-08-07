@@ -94,11 +94,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--main-bg);
+    background: var(--light-gray);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--c1);
+    background: var(--gray-txt);
+    border-radius: 5px;
 }
 
 /* ********************************************************************** */
@@ -302,7 +303,7 @@ input[type="radio"] {
     background-color: var(--main-bg);
 
     position: absolute;
-    top: 95%;
+    top: 80%;
     z-index: 2;
 
     opacity: 0;
@@ -341,7 +342,7 @@ input[type="radio"] {
     pointer-events: all;
 }
 
-/* switch, for theme button and select all */
+/* switch, select all */
 
 .switch-container {
     display: inline-block;

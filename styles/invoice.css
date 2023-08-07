@@ -1,0 +1,189 @@
+h3,
+h4 {
+    border: none !important;
+    padding: 0 !important;
+    font-weight: 400;
+    font-size: var(--default);
+    color: var(--gray-txt);
+}
+.p-header{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.back-btn {
+    padding: 5px 10px;
+    text-decoration: none;
+
+    color: white;
+    background-color: var(--neutral);
+    border-radius: 5px;
+}
+
+.card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap2);
+}
+
+.special {
+    font-weight: 600;
+    font-size: var(--small);
+    color: var(--c1);
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 h4 {
+    color: var(--txt);
+    font-size: var(--default);
+    font-weight: 600;
+}
+
+.row2 p {
+    color: var(--txt);
+    font-size: var(--small);
+}
+
+.row2 .right {
+    text-align: right;
+}
+
+.table tr {
+    border: none;
+}
+
+.table tr:first-child {
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.option {
+    padding: 0 5px !important;
+}
+
+.qnty {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add,
+.sub {
+    padding: 10px;
+}
+
+.add {
+    color: var(--positive);
+}
+
+.sub {
+    color: var(--negative);
+}
+
+.row4 {
+    display: grid;
+    grid-template-columns: 58% 38%;
+    gap: 4%;
+}
+
+.row4 .left p {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--table-style);
+}
+
+.row4 .right div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.row4 .right p {
+    font-size: var(--small);
+}
+
+.total-container {
+    margin-top: 20px;
+    padding: 5px 0;
+    border-top: 2px solid var(--light-gray);
+}
+
+.total-container h3 {
+    color: var(--txt);
+}
+
+.btns {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-row {
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: var(--c1);
+    border-radius: 5px;
+}
+
+.calc {
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: var(--c4);
+    border-radius: 5px;
+}
+
+.print {
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: var(--c2);
+    border-radius: 5px;
+}
+
+.save {
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: var(--c3);
+    border-radius: 5px;
+}
+
+@media (max-width:750px) {
+    .row4 {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap1);
+    }
+}
+
+@media (max-width:500px) {
+    main {
+        margin: 10px 0;
+    }
+
+    .row2 {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap1);
+    }
+}
+
+@media (max-width:350px) {
+    .btns {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
