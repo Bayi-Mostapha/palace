@@ -1,7 +1,8 @@
 document.querySelector('.theme-btn').addEventListener('click', changeTheme);
 let themeBtn = document.querySelector('.theme-btn');
 let theme = localStorage.getItem('P.A.-M.B.-18-theme');
-if (theme === null) {
+
+if (theme == null) {
     theme = 'light';
     localStorage.setItem('P.A.-M.B.-18-theme', theme);
 } else if (theme === 'dark') {

@@ -18,6 +18,7 @@ function getMonthName(month) {
 
     return monthNames[month];
 }
+
 function displayDate() {
     const currentDate = new Date();
 
@@ -36,56 +37,58 @@ displayDate();
 const ctx1 = document.getElementById('Chart1').getContext('2d');
 const chartData1 = [12, 7, 4, 5, 5, 6];
 
-new Chart(ctx1, {
-    type: 'line',
-    data: {
-        labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'jully'],
-        datasets: [{
-            label: 'sales this year',
-            data: chartData1,
-            borderWidth: 2,
-            borderColor: 'rgb(84, 170, 213)',
-            backgroundColor: 'rgb(84, 170, 213)',
-            radius: 0,
-            tension: 0.4
-        }]
-    },
-    options: {
-        hitRadius: 30,
-        scales: {
-            y: {
-                beginAtZero: true
+if (ctx1)
+    new Chart(ctx1, {
+        type: 'line',
+        data: {
+            labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'jully'],
+            datasets: [{
+                label: 'sales this year',
+                data: chartData1,
+                borderWidth: 2,
+                borderColor: 'rgb(84, 170, 213)',
+                backgroundColor: 'rgb(84, 170, 213)',
+                radius: 0,
+                tension: 0.4
+            }]
+        },
+        options: {
+            hitRadius: 30,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
-    }
-});
+    });
 
 const ctx2 = document.getElementById('Chart2').getContext('2d');
 const chartData2 = [4, 8, 5, 7, 8, 3, 4];
 
-new Chart(ctx2, {
-    type: 'line',
-    data: {
-        labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'jully'],
-        datasets: [{
-            label: 'profit this year',
-            data: chartData2,
-            borderWidth: 2,
-            borderColor: 'rgb(98, 89, 202)',
-            backgroundColor: 'rgb(98, 89, 202)',
-            radius: 0,
-            tension: 0.4
-        }]
-    },
-    options: {
-        hitRadius: 30,
-        scales: {
-            y: {
-                beginAtZero: true
+if (ctx2)
+    new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'jully'],
+            datasets: [{
+                label: 'profit this year',
+                data: chartData2,
+                borderWidth: 2,
+                borderColor: 'rgb(98, 89, 202)',
+                backgroundColor: 'rgb(98, 89, 202)',
+                radius: 0,
+                tension: 0.4
+            }]
+        },
+        options: {
+            hitRadius: 30,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
-    }
-});
+    });
 
 // ****************************************************************************
 

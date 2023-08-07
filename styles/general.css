@@ -8,8 +8,8 @@
 }
 
 :root {
-    --main-bg: #ffffff;
-    --body: #F5F7FB;
+    --main-bg: rgb(255, 255, 255);
+    --body: rgb(245, 247, 251);
     --txt: black;
     --gray-txt: #999999;
     --main-color: rgb(92, 97, 242);
@@ -24,10 +24,10 @@
     --gap1: 15px;
     --gap2: 20px;
 
-    --navbars: #ffffff;
+    --navbars: rgb(255, 255, 255);
     --navbars-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
 
-    --card-bg-color: #ffffff;
+    --card-bg-color: rgb(255, 255, 255);
     --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     --card-radius: 10px;
 
@@ -62,16 +62,16 @@ body {
 }
 
 .dark-mode {
-    --main-bg: #333333;
-    --body: #1E1E1E;
+    --main-bg: rgb(86, 80, 81);
+    --body: rgb(21, 25, 34);
     --txt: #eeeeee;
-    --light-shadow: 0px 2px 8px 0px rgba(156, 156, 156, 0.1);
+    --light-shadow: 0px 2px 8px 0px rgba(156, 156, 156, 0.05);
 
-    --navbars: #2C2C2C;
-    --navbars-shadow: 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 2px rgba(255, 255, 255, 0.1);
+    --navbars: rgb(25, 28, 32);
+    --navbars-shadow: 0 1px 1px rgba(255, 255, 255, 0.05), 0 2px 2px rgba(255, 255, 255, 0.05);
 
-    --card-bg-color: #2C2C2C;
-    --card-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 2px -1px rgba(255, 255, 255, 0.1);
+    --card-bg-color: rgb(38, 40, 42);
+    --card-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.05), 0 1px 2px -1px rgba(255, 255, 255, 0.05);
 
     /* for 2n rows in dashboard tables */
     --table-style: rgba(255, 255, 255, 0.02);
@@ -571,11 +571,6 @@ input[type="radio"] {
     transform: rotate(90deg);
 }
 
-.nav-link:hover>i,
-.nav-link .nav-link-content:hover>i {
-    color: var(--txt);
-}
-
 .nav-link>a,
 .nav-link .nav-link-content p {
     font-weight: 500;
@@ -586,15 +581,26 @@ input[type="radio"] {
     transition: all 300ms;
 }
 
+.nav-link:hover>i,
+.nav-link .nav-link-content:hover>i {
+    color: var(--txt);
+    transform: scale(1.1);
+}
+
 .nav-link:hover>a,
 .nav-link-content:hover p {
     color: var(--txt);
-    transform: translateX(5px);
+    transform: translateX(10px);
+}
+
+.curr-page>i {
+    color: var(--main-color) !important;
+    filter: drop-shadow(0 0 1px var(--c1));
 }
 
 .pin {
     margin-left: auto;
-    margin-right: 5px;
+    margin-right: 10px;
     opacity: 0;
     transition: all 100ms;
 }
@@ -605,7 +611,7 @@ input[type="radio"] {
 }
 
 .no-submenu .pin {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .nav-link:hover .pin {

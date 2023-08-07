@@ -40,20 +40,21 @@ const navLinks = document.querySelectorAll('.nav-link');
 const pinnedElementsContainer = document.querySelector('.pinned-elements');
 const navLinksContainer = document.querySelector('.nav-body');
 
-pinBtns.forEach((pin, i) => {
-    pin.addEventListener('click', () => {
-        const index = i;
+if (pinBtns)
+    pinBtns.forEach((pin, i) => {
+        pin.addEventListener('click', () => {
+            const index = i;
 
-        if (pinnedElements.includes(index)) {
-            pinnedElements = pinnedElements.filter((pinnedIndex) => pinnedIndex !== index);
-            updateDOM();
-        } else {
-            pinnedElements.push(index);
-            updateDOM();
-        }
+            if (pinnedElements.includes(index)) {
+                pinnedElements = pinnedElements.filter((pinnedIndex) => pinnedIndex !== index);
+                updateDOM();
+            } else {
+                pinnedElements.push(index);
+                updateDOM();
+            }
 
+        });
     });
-});
 
 function updateDOM() {
     pinnedElementsContainer.innerHTML = '';
@@ -81,12 +82,14 @@ function updateDOM() {
 const userBtn = document.querySelector('.user-img1');
 const userInfo = document.querySelector('.user-info');
 
-userBtn.addEventListener('click', () => {
-    userInfo.classList.toggle('show');
-});
-userInfo.addEventListener('mouseleave', () => {
-    userInfo.classList.remove('show');
-});
+if (userBtn)
+    userBtn.addEventListener('click', () => {
+        userInfo.classList.toggle('show');
+    });
+if (userInfo)
+    userInfo.addEventListener('mouseleave', () => {
+        userInfo.classList.remove('show');
+    });
 
 // ****************************************************************************
 
@@ -96,53 +99,56 @@ const closeNav = document.querySelector('.close-nav');
 const openNav = document.querySelector('.open-nav');
 const sideNav = document.querySelector('.side-bar');
 
+if (closeNav)
+    closeNav.addEventListener('click', () => {
+        openNav.classList.remove('hide2');
 
-closeNav.addEventListener('click', () => {
-    openNav.classList.remove('hide2');
+        sideNav.classList.add('hide');
+        sideNav.classList.remove('side-bar-opened');
+        sideNav.classList.add('side-bar-closed');
 
-    sideNav.classList.add('hide');
-    sideNav.classList.remove('side-bar-opened');
-    sideNav.classList.add('side-bar-closed');
+        mainContent.classList.add('side-bar-closed');
+        mainNav.classList.add('side-bar-closed');
+        mainContent.classList.remove('side-bar-opened');
+        mainNav.classList.remove('side-bar-opened');
+    });
 
-    mainContent.classList.add('side-bar-closed');
-    mainNav.classList.add('side-bar-closed');
-    mainContent.classList.remove('side-bar-opened');
-    mainNav.classList.remove('side-bar-opened');
-});
+if (openNav)
+    openNav.addEventListener('click', () => {
+        openNav.classList.add('hide2');
 
-openNav.addEventListener('click', () => {
-    openNav.classList.add('hide2');
+        sideNav.classList.remove('hide');
+        sideNav.classList.add('side-bar-opened');
+        sideNav.classList.remove('side-bar-closed');
 
-    sideNav.classList.remove('hide');
-    sideNav.classList.add('side-bar-opened');
-    sideNav.classList.remove('side-bar-closed');
-
-    mainContent.classList.remove('side-bar-closed');
-    mainNav.classList.remove('side-bar-closed');
-    mainContent.classList.add('side-bar-opened');
-    mainNav.classList.add('side-bar-opened');
-});
+        mainContent.classList.remove('side-bar-closed');
+        mainNav.classList.remove('side-bar-closed');
+        mainContent.classList.add('side-bar-opened');
+        mainNav.classList.add('side-bar-opened');
+    });
 
 // ********************************************************************
 
 const submenuBtns = document.querySelectorAll('.submenu-btn');
 
-submenuBtns.forEach(submenuBtn => {
-    submenuBtn.addEventListener('click', () => {
-        const submenu = submenuBtn.querySelector('.submenu');
-        const submenuState = submenuBtn.querySelector('.submenu-state');
-        submenu.classList.toggle('show-submenu');
-        submenuState.classList.toggle('rotate');
+if (submenuBtns)
+    submenuBtns.forEach(submenuBtn => {
+        submenuBtn.addEventListener('click', () => {
+            const submenu = submenuBtn.querySelector('.submenu');
+            const submenuState = submenuBtn.querySelector('.submenu-state');
+            submenu.classList.toggle('show-submenu');
+            submenuState.classList.toggle('rotate');
+        });
     });
-});
 
 // ********************************************************************
 
 const switchContainers = document.querySelectorAll('.switch-container');
 
-switchContainers.forEach(switchContainer => {
-    switchContainer.addEventListener('click', () => {
-        const switchBtn = switchContainer.querySelector('.switch-btn');
-        switchBtn.classList.toggle('on');
+if (switchContainers)
+    switchContainers.forEach(switchContainer => {
+        switchContainer.addEventListener('click', () => {
+            const switchBtn = switchContainer.querySelector('.switch-btn');
+            switchBtn.classList.toggle('on');
+        });
     });
-});
