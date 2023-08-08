@@ -1,4 +1,5 @@
 # note!!
+-check popup.html !!!!!
 -add curr-page class to side bar nav-link that your page is currently at!
 <br>
 tabbed content:
