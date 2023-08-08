@@ -830,7 +830,6 @@ input[type="radio"] {
         width: 90%;
     }
 
-
     .user-info {
         right: 0;
     }
@@ -843,6 +842,10 @@ input[type="radio"] {
 
     .side-bar {
         width: 100%;
+    }
+
+    main {
+        margin: 10px 0;
     }
 }
 

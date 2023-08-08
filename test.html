@@ -5,75 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .row2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .row2 {
-            background-color: var(--c1);
-            color: white;
-            padding: 5px;
-            border-radius: 10px;
-        }
-
-        /*  */
-
-        .row2 {
-            --width: 200%;
-            box-sizing: border-box;
-            transition: 200ms;
-            color: #fff;
-            border-radius: 5px;
-            backdrop-filter: blur(2px);
-            overflow: hidden;
-            background-color: blue;
-        }
-
-        .row2:before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 50%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.4);
-            filter: blur(1px);
-            transition: 400ms;
-            transform: skewX(45deg) translateX(calc(var(--width) + 50%));
-        }
-
-        .row2:hover {
-            transform: translateY(5px);
-        }
-
-        .row2:hover:before {
-            transform: skewX(45deg) translateX(calc(var(--width) * -1 - 50%));
-        }
-
-        .row2>* {
-            opacity: 0.8;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/table.css">
 </head>
 
 <body>
-    <div class="row2" href="#">
-        <div class="left">
-            <h4>from</h4>
-            <p>company</p>
-            <p>0612343356</p>
-            <p>example@company.com</p>
-        </div>
-        <div class="right">
-            <h4>to</h4>
-            <p>client name</p>
-            <p>0713099801</p>
-            <p>example@gmail.com</p>
-            <p>client address</p>
-        </div>
+    <div class="table-container card">
+        <table class="table">
+            <tr>
+                <th>id</th>
+                <th>salary <span class="unimportant">(DH)</span></th>
+                <th>total bonus <span class="unimportant">(DH)</span></th>
+                <th>total payed <span class="unimportant">(DH)</span></th>
+                <th>date</th>
+            </tr>
+            <tr>
+                <td><span class="id">#1751</span></td>
+                <td>1000</td>
+                <td>500</td>
+                <td>1500</td>
+                <td>08-08-2023</td>
+            </tr>
+        </table>
     </div>
-
+    
+    <script src="https://kit.fontawesome.com/a0929f6f84.js" crossorigin="anonymous"></script>
+    <script src="./js/general.js"></script>
+    <script src="./js/dark mode.js"></script>
+    <script src="./js/table.js"></script>
 </body>
 
 </html>
