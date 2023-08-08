@@ -4,35 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/general.css">
-    <link rel="stylesheet" href="./styles/table.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        .select2 .select2-container .select2-container--default{
+            border: 1px solid var(--light-gray);
+        }
+        .select2-container--default.select2-container--focus .select2-selection--multiple {
+            border: 1px solid var(--c1);
+        }
+
+        .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+            border: none;
+        }
+
+        .select2-selection__choice__remove span {
+            color: var(--c1);
+        }
+
+        .select2-container--default .select2-selection--multiple .select2-selection__choice {
+            background-color: var(--c1-shadow);
+            color: var(--c1);
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="table-container card">
-        <table class="table">
-            <tr>
-                <th>id</th>
-                <th>salary <span class="unimportant">(DH)</span></th>
-                <th>total bonus <span class="unimportant">(DH)</span></th>
-                <th>total payed <span class="unimportant">(DH)</span></th>
-                <th>date</th>
-            </tr>
-            <tr>
-                <td><span class="id">#1751</span></td>
-                <td>1000</td>
-                <td>500</td>
-                <td>1500</td>
-                <td>08-08-2023</td>
-            </tr>
-        </table>
-    </div>
-    
-    <script src="https://kit.fontawesome.com/a0929f6f84.js" crossorigin="anonymous"></script>
-    <script src="./js/general.js"></script>
-    <script src="./js/dark mode.js"></script>
-    <script src="./js/table.js"></script>
+    <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width:100%;">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+    </select>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+        $(".js-example-basic-multiple").select2({
+            width: 'resolve'
+        });
+    </script>
 </body>
 
 </html>

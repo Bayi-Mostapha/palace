@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pop up</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/pop up.css">
 </head>
@@ -227,6 +228,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="sinput">
+                        <select class="js-example-basic-multiple" name="states[]" multiple="multiple"
+                            style="width:100%;">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
                     <div class="input">
                         <label for="">Date of Birth</label>
                         <input type="date">
@@ -244,6 +252,9 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://kit.fontawesome.com/a0929f6f84.js" crossorigin="anonymous"></script>
     <script src="./js/general.js"></script>
     <script src="./js/dark mode.js"></script>

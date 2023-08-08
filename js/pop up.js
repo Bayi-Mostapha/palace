@@ -27,3 +27,10 @@ if (closePopup)
             popup.classList.remove('show-pop-up');
         }, 200);
     });
+
+$(document).ready(function () {
+    $('.js-example-basic-multiple').select2();
+});
+$(".js-example-basic-multiple").select2({
+    width: 'resolve'
+});
