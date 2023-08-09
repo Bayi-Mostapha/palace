@@ -1,0 +1,291 @@
+body {
+    padding: 0 !important;
+}
+
+main {
+    height: 100dvh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+/* ****************************************** */
+
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    height: 75%;
+}
+
+/* ****************************************** */
+
+.left-container {
+    position: relative;
+    width: 40%;
+    height: 100%;
+
+    background-color: var(--c1-shadow);
+}
+
+.chart1 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+
+    width: 200px;
+    height: 200px;
+}
+
+.chart1 img {
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    width: 100%;
+    object-fit: contain;
+    animation: floating 6s ease-in-out infinite;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.picture img {
+    position: relative;
+    z-index: 2;
+    height: 90%;
+    object-fit: contain;
+}
+
+.blob {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+
+    box-shadow: 0 0 0 0 rgba(106, 106, 255, 0.15);
+    transition: all 300ms;
+}
+
+.blob1 {
+    height: 100px;
+    width: 100px;
+
+    bottom: 5%;
+    right: 15%;
+    background: var(--c2);
+    animation: pulse2 4s infinite;
+    animation-delay: 500ms;
+}
+
+.blob1 i {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.blob2 {
+    height: 75px;
+    width: 75px;
+
+    top: 15%;
+    right: 10%;
+    background: var(--c3);
+    animation: pulse3 5s infinite;
+    animation-delay: 1s;
+}
+
+.blob2 i {
+    color: white;
+    font-size: 2rem;
+}
+
+.blob3 {
+    height: 60px;
+    width: 60px;
+
+    bottom: 35%;
+    left: 10%;
+    background: var(--c4);
+    animation: pulse4 5s infinite;
+    animation-delay: 1.5s;
+}
+
+.blob3 i {
+    color: white;
+    font-size: 1.7rem;
+}
+
+/* ****************************************** */
+
+.form-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.form-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.unimportant {
+    color: var(--gray-txt);
+    font-size: var(--small);
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.input {
+    margin: 5px 0;
+    width: 90%;
+}
+
+.password {
+    width: 100%;
+    position: relative;
+}
+
+.password input {
+    padding-right: 30px;
+}
+
+.password .show-hide-pwd {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.login {
+    width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+    background-color: var(--c2);
+    color: white;
+    font-size: var(--default);
+    font-weight: 600;
+}
+
+.other-page-label {
+    margin-top: 20px;
+}
+
+.link {
+    color: var(--c2);
+    font-weight: 600;
+}
+
+/* ****************************************** */
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-5px, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes pulse1 {
+    0% {
+        box-shadow: 0 0 0 0px var(--c2-shadow), 0 0 0 0px var(--c2-shadow);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c1-shadow2), 0 0 0 30px var(--c1-shadow2);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        box-shadow: 0 0 0 0px var(--c3-shadow), 0 0 0 0px var(--c3-shadow);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c3-shadow2), 0 0 0 30px var(--c3-shadow2);
+    }
+}
+
+@keyframes pulse3 {
+    0% {
+        box-shadow: 0 0 0 0px var(--c4-shadow), 0 0 0 0px var(--c4-shadow);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c4-shadow2), 0 0 0 30px var(--c4-shadow2);
+    }
+}
+
+/* **************************************************** */
+
+@media (max-width:950px) {
+    .login-container {
+        padding: 10px !important;
+        height: auto;
+    }
+
+    .left-container {
+        display: none;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .login-container {
+        width: 90%;
+    }
+}
