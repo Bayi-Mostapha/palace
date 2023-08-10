@@ -29,6 +29,7 @@ main {
 /* ****************************************** */
 
 .left-container {
+    overflow: hidden;
     position: relative;
     width: 40%;
     height: 100%;
