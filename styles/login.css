@@ -20,10 +20,10 @@ main {
 
 .content-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    width: 75%;
-    height: 75%;
+    width: 900px;
+    height: 500px;
 }
 
 /* ****************************************** */
@@ -123,7 +123,7 @@ main {
     bottom: 35%;
     left: 10%;
     background: var(--c4);
-    animation: pulse4 5s infinite;
+    animation: pulse3 5s infinite;
     animation-delay: 1.5s;
 }
 
@@ -134,8 +134,12 @@ main {
 
 /* ****************************************** */
 
+::-ms-reveal {
+    display: none
+}
+
 .form-container {
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -169,7 +173,7 @@ form {
 
 .input {
     margin: 5px 0;
-    width: 90%;
+    width: 65%;
 }
 
 .password {
@@ -189,7 +193,7 @@ form {
 }
 
 .login {
-    width: 60%;
+    width: 40%;
     padding: 10px;
     margin-top: 20px;
 
@@ -270,8 +274,10 @@ form {
 /* **************************************************** */
 
 @media (max-width:950px) {
-    .login-container {
+    .content-container {
+        display: block;
         padding: 10px !important;
+        width: 55%;
         height: auto;
     }
 
@@ -285,7 +291,12 @@ form {
 }
 
 @media (max-width:500px) {
-    .login-container {
+    .content-container {
         width: 90%;
+    }
+
+    .input {
+        margin: 5px 0;
+        width: 75%;
     }
 }
