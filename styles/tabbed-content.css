@@ -10,8 +10,8 @@
 }
 
 .active-tabbed-nav {
-    color: var(--c1);
-    border-bottom: 3px solid var(--c1);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
 
 .tabbed-nav-body {
@@ -60,7 +60,7 @@
 
 .mb-submit {
     padding: 5px 10px;
-    background-color: var(--c1);
+    background-color: var(--main-color);
     margin: 10px 0;
 }
 

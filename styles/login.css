@@ -1,4 +1,14 @@
 body {
+    --c1: rgb(255, 224, 102);
+    --c1-shadow: rgba(255, 224, 102, 0.2);
+    --c1-shadow2: rgba(255, 224, 102, 0);
+    --c2: rgb(224, 119, 125);
+    --c2-shadow: rgba(224, 119, 125, 0.2);
+    --c2-shadow2: rgba(224, 119, 125, 0);
+    --c3: rgb(93, 211, 158);
+    --c3-shadow: rgba(93, 211, 158, 0.2);
+    --c3-shadow2: rgba(93, 211, 158, 0);
+
     padding: 0 !important;
 }
 
@@ -13,6 +23,7 @@ main {
 
 .mb-card {
     padding: 0 !important;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -31,10 +42,20 @@ main {
 .left-container {
     overflow: hidden;
     position: relative;
-    width: 40%;
+    width: 55%;
     height: 100%;
 
-    background-color: var(--c1-shadow);
+    background:
+        linear-gradient(180deg, rgba(48, 84, 245, 0) 20%, rgba(48, 84, 245, .1) 20%, rgba(48, 84, 245, .1) 40%, rgba(48, 84, 245, .2) 40%, rgba(48, 84, 245, .2) 60%, rgba(48, 84, 245, .4) 60%, rgba(48, 84, 245, .4) 80%, rgba(48, 84, 245, .5) 80%),
+        linear-gradient(45deg, rgba(0, 174, 239, .3) 20%, rgba(0, 174, 239, .4) 20%, rgba(0, 174, 239, .4) 40%, rgba(0, 174, 239, .5) 40%, rgba(0, 174, 239, .5) 60%, rgba(0, 174, 239, .6) 60%, rgba(0, 174, 239, .6) 80%, rgba(0, 174, 239, .7) 80%),
+        linear-gradient(-45deg, rgba(25, 181, 254, 0) 20%, rgba(25, 181, 254, .1) 20%, rgba(25, 181, 254, .1) 40%, rgba(25, 181, 254, .2) 40%, rgba(25, 181, 254, .2) 60%, rgba(25, 181, 254, .4) 60%, rgba(25, 181, 254, .4) 80%, rgba(25, 181, 254, .6) 80%),
+        linear-gradient(90deg, rgba(82, 109, 254, 0) 20%, rgba(82, 109, 254, .3) 20%, rgba(82, 109, 254, .3) 40%, rgba(82, 109, 254, .5) 40%, rgba(82, 109, 254, .5) 60%, rgba(82, 109, 254, .7) 60%, rgba(82, 109, 254, .7) 80%, rgba(82, 109, 254, .8) 80%),
+        linear-gradient(-90deg, rgba(122, 173, 255, 0) 20%, rgba(122, 173, 255, .4) 20%, rgba(122, 173, 255, .4) 40%, rgba(122, 173, 255, .6) 40%, rgba(122, 173, 255, .6) 60%, rgba(122, 173, 255, .8) 60%, rgba(122, 173, 255, .8) 80%, rgba(122, 173, 255, .9) 80%);
+    background-color: rgb(122, 173, 255);
+
+
+    background-size: 100% 100%;
+
 }
 
 .chart1 {
@@ -45,6 +66,7 @@ main {
 
     width: 200px;
     height: 200px;
+    transform: rotate(-5deg);
 }
 
 .chart1 img {
@@ -78,10 +100,9 @@ main {
     align-items: center;
     justify-content: center;
 
-    border-radius: 50%;
+    border-radius: 15px;
 
 
-    box-shadow: 0 0 0 0 rgba(106, 106, 255, 0.15);
     transition: all 300ms;
 }
 
@@ -91,9 +112,10 @@ main {
 
     bottom: 5%;
     right: 15%;
-    background: var(--c2);
-    animation: pulse2 4s infinite;
+    background: var(--c1);
+    animation: pulse1 4s infinite;
     animation-delay: 500ms;
+    transform: rotate(10deg);
 }
 
 .blob1 i {
@@ -107,9 +129,10 @@ main {
 
     top: 15%;
     right: 10%;
-    background: var(--c3);
-    animation: pulse3 5s infinite;
+    background: var(--c2);
+    animation: pulse2 5s infinite;
     animation-delay: 1s;
+    transform: rotate(-20deg);
 }
 
 .blob2 i {
@@ -123,9 +146,10 @@ main {
 
     bottom: 35%;
     left: 10%;
-    background: var(--c4);
+    background: var(--c3);
     animation: pulse3 5s infinite;
     animation-delay: 1.5s;
+    transform: rotate(40deg);
 }
 
 .blob3 i {
@@ -140,7 +164,7 @@ main {
 }
 
 .form-container {
-    width: 60%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -174,7 +198,13 @@ form {
 
 .input {
     margin: 5px 0;
-    width: 65%;
+    width: 75%;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 7px;
+    border: 1px solid var(--gray-txt);
 }
 
 .password {
@@ -194,12 +224,12 @@ form {
 }
 
 .mb-login {
-    width: 35%;
+    width: 75%;
     padding: 10px;
     margin-top: 20px;
 
     border-radius: 5px;
-    background-color: var(--c2);
+    background-color: var(--main-color);
     color: white;
     font-size: var(--default);
     font-weight: 600;
@@ -210,7 +240,7 @@ form {
 }
 
 .link {
-    color: var(--c2);
+    color: var(--main-color);
     font-weight: 600;
 }
 
@@ -232,7 +262,7 @@ form {
 
 @keyframes pulse1 {
     0% {
-        box-shadow: 0 0 0 0px var(--c2-shadow), 0 0 0 0px var(--c2-shadow);
+        box-shadow: 0 0 0 0px var(--c1-shadow), 0 0 0 0px var(--c1-shadow);
     }
 
     50% {
@@ -246,6 +276,20 @@ form {
 
 @keyframes pulse2 {
     0% {
+        box-shadow: 0 0 0 0px var(--c2-shadow), 0 0 0 0px var(--c2-shadow);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        box-shadow: 0 0 0 60px var(--c2-shadow2), 0 0 0 30px var(--c2-shadow2);
+    }
+}
+
+@keyframes pulse3 {
+    0% {
         box-shadow: 0 0 0 0px var(--c3-shadow), 0 0 0 0px var(--c3-shadow);
     }
 
@@ -255,20 +299,6 @@ form {
 
     100% {
         box-shadow: 0 0 0 60px var(--c3-shadow2), 0 0 0 30px var(--c3-shadow2);
-    }
-}
-
-@keyframes pulse3 {
-    0% {
-        box-shadow: 0 0 0 0px var(--c4-shadow), 0 0 0 0px var(--c4-shadow);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        box-shadow: 0 0 0 60px var(--c4-shadow2), 0 0 0 30px var(--c4-shadow2);
     }
 }
 

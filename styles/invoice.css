@@ -31,7 +31,7 @@ h4 {
 .special {
     font-weight: 600;
     font-size: var(--small);
-    color: var(--c1);
+    color: var(--main-color);
 }
 
 .row1 {
@@ -133,7 +133,7 @@ h4 {
     color: white;
     font-weight: 600;
     padding: 5px 10px;
-    background-color: var(--c1);
+    background-color: var(--main-color);
     border-radius: 5px;
 }
 

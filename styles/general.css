@@ -1,11 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
     --main-bg: rgb(255, 255, 255);
     --body: rgb(245, 247, 251);
     --txt: black;
     --gray-txt: #999999;
-    --main-color: rgb(92, 97, 242);
+    --main-color: rgb(48, 84, 245);
+    --main-color-shadow: rgba(48, 84, 245, 0.15);
     --light-gray: rgb(236, 237, 248);
     --light-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
 
@@ -24,21 +25,21 @@
     --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     --card-radius: 10px;
 
-    --c1: rgb(48, 84, 245);
-    --c1-shadow: rgba(92, 97, 242, 0.2);
-    --c1-shadow2: rgba(92, 97, 242, 0);
+    --c1: rgb(64, 89, 173);
+    --c1-shadow: rgba(64, 89, 173, 0.2);
+    --c1-shadow2: rgba(64, 89, 173, 0);
 
-    --c2: rgb(84, 170, 213);
-    --c2-shadow: rgba(84, 170, 213, 0.2);
-    --c2-shadow2: rgba(84, 170, 213, 0);
+    --c2: rgb(107, 154, 196);
+    --c2-shadow: rgba(107, 154, 196, 0.2);
+    --c2-shadow2: rgba(107, 154, 196, 0);
 
-    --c3: rgb(97, 174, 65);
-    --c3-shadow: rgba(97, 174, 65, 0.2);
-    --c3-shadow2: rgba(97, 174, 65, 0);
+    --c3: rgb(35, 186, 45);
+    --c3-shadow: rgba(35, 186, 45, 0.2);
+    --c3-shadow2: rgba(35, 186, 45, 0);
 
-    --c4: rgb(98, 89, 202);
-    --c4-shadow: rgba(98, 89, 202, 0.2);
-    --c4-shadow2: rgba(98, 89, 202, 0);
+    --c4: rgb(41, 164, 127);
+    --c4-shadow: rgba(41, 164, 127, 0.2);
+    --c4-shadow2: rgba(41, 164, 127, 0);
 
     --positive: #2ECC71;
     --neutral: rgb(238, 161, 29);
@@ -95,7 +96,7 @@ select {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* ********************************************************************* */
@@ -168,7 +169,7 @@ body {
     margin: 15px 0;
     text-decoration: none;
     padding: 5px 10px;
-    background-color: var(--c1);
+    background-color: var(--main-color);
     color: white;
     border-radius: 5px;
 }
@@ -279,7 +280,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: var(--c1);
+    border-color: var(--main-color);
 }
 
 input[type="date"] {
@@ -296,7 +297,7 @@ input[type="date"] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    accent-color: var(--c1);
+    accent-color: var(--main-color);
 }
 
 .input {
@@ -315,7 +316,7 @@ input[type="radio"] {
 
 
 .mb-submit {
-    background-color: var(--c1);
+    background-color: var(--main-color);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -384,8 +385,8 @@ input[type="radio"] {
 }
 
 .selected {
-    background-color: var(--c1-shadow) !important;
-    color: var(--c1);
+    background-color: var(--main-color-shadow) !important;
+    color: var(--main-color);
 }
 
 .show-menu {
@@ -413,7 +414,7 @@ input[type="radio"] {
     top: 2px;
     left: 2px;
 
-    background-color: var(--c1);
+    background-color: var(--main-color);
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -649,7 +650,7 @@ input[type="radio"] {
 
 .curr-page>i {
     color: var(--main-color) !important;
-    filter: drop-shadow(0 0 1px var(--c1));
+    filter: drop-shadow(0 0 1px var(--main-color));
 }
 
 .pin {

@@ -6,7 +6,7 @@
 }
 
 .welcome-card h1 {
-    color: var(--c1);
+    color: var(--main-color);
     font-weight: 600;
     font-size: var(--large);
 }
@@ -25,19 +25,19 @@
     gap: 15px;
 
     padding: 5px 10px;
-    background-color: rgba(48, 84, 245, 0.1);
-    color: var(--c1);
+    color: var(--main-color);
+    background-color: var(--main-color-shadow);
     font-weight: bold;
     border-radius: 15px;
 }
 
 .day-information i {
     font-size: var(--big);
-    color: var(--c1);
+    color: var(--main-color);
 }
 
 .welcome-card:hover {
-    background-color: var(--c1);
+    background-color: var(--main-color);
 }
 
 .welcome-card:hover h1 {
@@ -373,8 +373,8 @@
     width: fit-content;
     padding: 2px 10px;
     border-radius: 7px;
-    background-color: rgba(48, 84, 245, 0.15);
-    color: var(--c1);
+    color: var(--main-color);
+    background-color: var(--main-color-shadow);
 }
 
 .table2 .status {

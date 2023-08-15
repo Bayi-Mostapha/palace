@@ -87,7 +87,7 @@
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-    border: 1px solid var(--c1);
+    border: 1px solid var(--main-color);
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
@@ -95,12 +95,12 @@
 }
 
 .select2-selection__choice__remove span {
-    color: var(--c1);
+    color: var(--main-color);
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: var(--c1-shadow);
-    color: var(--c1);
+    background-color: var(--main-color-shadow);
+    color: var(--main-color);
     border: none;
 }
 

@@ -80,11 +80,11 @@ h1 {
 .browse-btn {
     margin-left: auto;
     padding: 5px 10px;
-    color: var(--c1);
+    color: var(--main-color);
     font-weight: 600;
     font-size: var(--small);
 
-    border: 1px solid var(--c1);
+    border: 1px solid var(--main-color);
     border-radius: 15px;
 
     cursor: pointer;
@@ -92,7 +92,7 @@ h1 {
 }
 
 .browse-btn:hover {
-    background-color: var(--c1);
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -150,7 +150,7 @@ h1 {
 
 
 .mb-submit {
-    background-color: var(--c1);
+    background-color: var(--main-color);
     color: white;
     padding: 5px 15px;
     border-radius: 5px;
