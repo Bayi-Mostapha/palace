@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- general is important in all files, dashboard is for the dashboard -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/dashboard styles.css">
     <title>admin dashboard</title>
@@ -13,7 +15,7 @@
 <body>
     <!-- nav bars  -->
     <header class="main-nav main-nav-margin-left side-bar-closed">
-        <button class="open-nav btn">
+        <button class="open-nav mb-btn">
             <i class="fa-solid fa-border-all side-bar-icon"></i>
             <i class="fa-solid fa-angle-right right-arrow"></i>
         </button>
@@ -35,10 +37,10 @@
             </div>
         </div>
         <div class="main-nav-links">
-            <button class="btn theme-btn">
+            <button class="mb-btn theme-btn">
                 <i class="fa-solid fa-moon"></i>
             </button>
-            <button class="btn" id="fullscreenButton">
+            <button class="mb-btn" id="fullscreenButton">
                 <i class="fa-solid fa-expand"></i>
             </button>
             <div class="user-img1 image-container1">
@@ -84,7 +86,7 @@
                 <img src="https://images.vexels.com/media/users/3/142789/isolated/preview/2bfb04ad814c4995f0c537c68db5cd0b-multicolor-swirls-circle-logo.png"
                     alt="logo">
             </div>
-            <button class="close-nav btn">
+            <button class="close-nav mb-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
@@ -97,7 +99,7 @@
             <div class="nav-link no-submenu curr-page">
                 <i class="fa-solid fa-house-user"></i>
                 <a href="">dashboard</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
@@ -105,7 +107,7 @@
                 <div class="nav-link-content">
                     <i class="fa-solid fa-users"></i>
                     <p>users</p>
-                    <button class="btn pin">
+                    <button class="mb-btn pin">
                         <i class="fa-solid fa-thumbtack"></i>
                     </button>
                     <i class="fa-solid fa-angle-right submenu-state"></i>
@@ -124,56 +126,56 @@
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-briefcase"></i>
                 <a href="">employees</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-file-circle-check"></i>
                 <a href="">attendance</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-building-user"></i>
                 <a href="">departments</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-cubes"></i>
                 <a href="">projects</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-users-line"></i>
                 <a href="">clients</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-list-check"></i>
                 <a href="">tasks</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-chart-column"></i>
                 <a href="">charts</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-gear"></i>
                 <a href="">settings</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
@@ -182,7 +184,7 @@
     <!-- main  -->
     <main class="main-margin-left side-bar-closed">
         <div class="main-container">
-            <div class="welcome-card card">
+            <div class="welcome-card mb-card">
                 <h1>Welcome to the dashboard <span class="user-name">Fname</span></h1>
                 <div class="day-information">
                     <div class="current-time"></div>
@@ -192,28 +194,28 @@
             <div class="row1">
                 <div class="row1--left-side">
                     <div class="mini-cards">
-                        <div class="mini-card mini-card1 card">
+                        <div class="mini-card mini-card1 mb-card">
                             <div class="blob blob1">
                                 <i class="fa-solid fa-hand-holding-dollar"></i>
                             </div>
                             <span class="mtitle">Total Salaries</span>
                             <span class="stats">15000 DH</span>
                         </div>
-                        <div class="mini-card mini-card2 card">
+                        <div class="mini-card mini-card2 mb-card">
                             <div class="blob blob2">
                                 <i class="fa-solid fa-sack-dollar"></i>
                             </div>
                             <span class="mtitle">Total Expense</span>
                             <span class="stats">14000 DH</span>
                         </div>
-                        <div class="mini-card mini-card3 card">
+                        <div class="mini-card mini-card3 mb-card">
                             <div class="blob blob3">
                                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                             </div>
                             <span class="mtitle">Total Invoice Clients</span>
                             <span class="stats">1</span>
                         </div>
-                        <div class="mini-card mini-card4 card">
+                        <div class="mini-card mini-card4 mb-card">
                             <div class="blob blob4">
                                 <i class="fa-solid fa-handshake"></i>
                             </div>
@@ -221,149 +223,19 @@
                             <span class="stats">0</span>
                         </div>
                     </div>
-                    <!-- <div class="table-card1 card">
-                        <table class="table1">
-                            <tr>
-                                <th>Top sellers</th>
-                                <th>Main product</th>
-                                <th>Price</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td class="information">
-                                    <div class="image-container1">
-                                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p class="user">Mostapha</p>
-                                        <p class="year">2023</p>
-                                    </div>
-                                </td>
-                                <td>shoes</td>
-                                <td><span class="price">260 000</span> MAD</td>
-                                <td><a href="" class="edit-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path
-                                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
-                                        </svg>
-                                    </a></td>
-                            </tr>
-                            <tr>
-                                <td class="information">
-                                    <div class="image-container1">
-                                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p class="user">Sanae</p>
-                                        <p class="year">2023</p>
-                                    </div>
-                                </td>
-                                <td>jacket</td>
-                                <td><span class="price">150 000</span> MAD</td>
-                                <td><a href="" class="edit-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path
-                                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
-                                        </svg>
-                                    </a></td>
-                            </tr>
-                            <tr>
-                                <td class="information">
-                                    <div class="image-container1">
-                                        <img src="https://images.pexels.com/photos/6801642/pexels-photo-6801642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p class="user">Mohammed</p>
-                                        <p class="year">2023</p>
-                                    </div>
-                                </td>
-                                <td>sweater</td>
-                                <td><span class="price">120 050</span> MAD</td>
-                                <td><a href="" class="edit-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path
-                                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
-                                        </svg>
-                                    </a></td>
-                            </tr>
-                            <tr>
-                                <td class="information">
-                                    <div class="image-container1">
-                                        <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg"
-                                            alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p class="user">Khalid</p>
-                                        <p class="year">2023</p>
-                                    </div>
-                                </td>
-                                <td>t-shirt</td>
-                                <td><span class="price">99 140</span> MAD</td>
-                                <td><a href="" class="edit-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path
-                                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
-                                        </svg>
-                                    </a></td>
-                            </tr>
-                            <tr>
-                                <td class="information">
-                                    <div class="image-container1">
-                                        <img src="https://images.pexels.com/photos/3262878/pexels-photo-3262878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p class="user">Khadija</p>
-                                        <p class="year">2023</p>
-                                    </div>
-                                </td>
-                                <td>pants</td>
-                                <td><span class="price">70 046</span> MAD</td>
-                                <td><a href="" class="edit-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path
-                                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
-                                        </svg>
-                                    </a></td>
-                            </tr>
-                            <tr>
-                                <td class="information">
-                                    <div class="image-container1">
-                                        <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p class="user">Youssef</p>
-                                        <p class="year">2023</p>
-                                    </div>
-                                </td>
-                                <td>hat</td>
-                                <td><span class="price">55 098</span> MAD</td>
-                                <td><a href="" class="edit-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path
-                                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
-                                        </svg>
-                                    </a></td>
-                            </tr>
-                        </table>
-                    </div> -->
                     <div class="charts">
-                        <div class="card1 card">
+                        <div class="card1 mb-card">
                             <span class="title">Sales &centerdot;</span>
                             <canvas id="Chart1"></canvas>
                             <div class="growth-rate1"></div>
                         </div>
-                        <div class="card2 card">
+                        <div class="card2 mb-card">
                             <span class="title">Profit &centerdot;</span>
                             <canvas id="Chart2"></canvas>
                             <div class="growth-rate2"></div>
                         </div>
                     </div>
-                    <div class="table-card2 card">
+                    <div class="table-card2 mb-card">
                         <table class="table2">
                             <h2 class="title">the most rated employees &centerdot;</h2>
                             <tr>
@@ -427,7 +299,7 @@
                     </div>
                 </div>
                 <div class="row1--right-side">
-                    <div class="side-card card">
+                    <div class="side-card mb-card">
                         <h2 class="title">Products &centerdot;</h2>
                         <table class="side-table">
                             <tr>
@@ -523,7 +395,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="side-card card">
+                    <div class="side-card mb-card">
                         <h2 class="title">Most absent employees &centerdot;</h2>
                         <table class="side-table">
                             <tr>
@@ -569,6 +441,9 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/a0929f6f84.js" crossorigin="anonymous"></script>
     <script src="./js/dashboard app.js"></script>

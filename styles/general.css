@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 :root {
     --main-bg: rgb(255, 255, 255);
     --body: rgb(245, 247, 251);
@@ -54,6 +47,58 @@
     /* for 2n rows in dashboard tables */
     --table-style: rgba(0, 0, 0, 0.03);
 }
+
+/* ************************************************* */
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+button,
+select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+:focus {
+    outline: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ********************************************************************* */
 
 body {
     padding: 70px 10px;
@@ -104,17 +149,17 @@ body {
 
 /* ********************************************************************** */
 
-.btn {
+.mb-btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.btn:hover {
+.mb-btn:hover {
     opacity: 0.9;
 }
 
-.btn:active {
+.mb-btn:active {
     opacity: 0.85;
 }
 
@@ -172,7 +217,7 @@ ul {
     list-style: none;
 }
 
-.card {
+.mb-card {
     background-color: var(--card-bg-color);
     box-shadow: var(--card-shadow);
     border-radius: var(--card-radius);
@@ -261,7 +306,7 @@ input[type="radio"] {
     height: fit-content;
 }
 
-.reset {
+.mb-reset {
     background-color: var(--negative);
     color: white;
     padding: 10px 20px;
@@ -269,11 +314,16 @@ input[type="radio"] {
 }
 
 
-.submit {
+.mb-submit {
     background-color: var(--c1);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.mb-disabled {
+    background-color: rgba(128, 128, 128, 0.1);
+    pointer-events: none;
 }
 
 /* ---select input--- */

@@ -7,6 +7,8 @@
 
 .welcome-card h1 {
     color: var(--c1);
+    font-weight: 600;
+    font-size: var(--large);
 }
 
 .day-information {
@@ -73,13 +75,13 @@
 
 .mtitle {
     width: 75%;
-    font-weight: bold;
+    font-weight: 600;
     position: relative;
     z-index: 3;
 }
 
 .mini-card .stats {
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .mini-card1 {
@@ -174,6 +176,10 @@
     color: var(--card-bg-color);
 }
 
+.mini-card:hover .mtitle {
+    color: var(--card-bg-color);
+}
+
 @keyframes pulse1 {
     0% {
         box-shadow: 0 0 0 0px var(--c1-shadow), 0 0 0 0px var(--c1-shadow);
@@ -213,7 +219,7 @@
     gap: 2%;
 }
 
-.card {
+.mb-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -230,7 +236,7 @@
         gap: var(--gap1);
     }
 
-    .card {
+    .mb-card {
         width: 100%;
     }
 

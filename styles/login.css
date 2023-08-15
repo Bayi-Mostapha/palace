@@ -11,7 +11,7 @@ main {
     justify-content: center;
 }
 
-.card {
+.mb-card {
     padding: 0 !important;
     overflow: hidden;
 }
@@ -193,8 +193,8 @@ form {
     transform: translateY(-50%);
 }
 
-.login {
-    width: 40%;
+.mb-login {
+    width: 35%;
     padding: 10px;
     margin-top: 20px;
 

@@ -39,8 +39,9 @@
 
 .close-pop-up {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
 }
 
 .close-pop-up i {
@@ -51,13 +52,13 @@
     transform: rotate(180deg);
 }
 
-.row {
+.mb-row {
     display: flex;
     align-items: center;
     gap: var(--gap1);
 }
 
-.row .input {
+.mb-row .input {
     width: 50%;
 }
 
@@ -74,7 +75,14 @@
     transform: translate(0);
 }
 
-.submit {
+.btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mb-submit {
     margin-top: 10px;
 }
 
@@ -85,11 +93,11 @@
 }
 
 @media (max-width:450px) {
-    .row {
+    .mb-row {
         flex-direction: column;
     }
 
-    .row .input {
+    .mb-row .input {
         width: 100%;
     }
 }

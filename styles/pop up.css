@@ -38,9 +38,10 @@
 }
 
 .close-pop-up {
+    padding: 10px;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
 }
 
 .close-pop-up i {
@@ -64,7 +65,14 @@
     transform: translate(0);
 }
 
-.submit {
+.btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mb-submit {
     margin-top: 10px;
 }
 

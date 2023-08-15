@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/attendance charts.css">
     <title>charts</title>
@@ -12,9 +14,9 @@
 <body>
     <!-- for this to work each chart should have a unique id  -->
 
-    <!-- navbars  -->
+    <!-- nav bars  -->
     <header class="main-nav main-nav-margin-left side-bar-closed">
-        <button class="open-nav btn">
+        <button class="open-nav mb-btn">
             <i class="fa-solid fa-border-all side-bar-icon"></i>
             <i class="fa-solid fa-angle-right right-arrow"></i>
         </button>
@@ -36,10 +38,10 @@
             </div>
         </div>
         <div class="main-nav-links">
-            <button class="btn theme-btn">
+            <button class="mb-btn theme-btn">
                 <i class="fa-solid fa-moon"></i>
             </button>
-            <button class="btn" id="fullscreenButton">
+            <button class="mb-btn" id="fullscreenButton">
                 <i class="fa-solid fa-expand"></i>
             </button>
             <div class="user-img1 image-container1">
@@ -85,7 +87,7 @@
                 <img src="https://images.vexels.com/media/users/3/142789/isolated/preview/2bfb04ad814c4995f0c537c68db5cd0b-multicolor-swirls-circle-logo.png"
                     alt="logo">
             </div>
-            <button class="close-nav btn">
+            <button class="close-nav mb-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
@@ -95,10 +97,10 @@
             <div class="break"></div>
         </div>
         <div class="nav-body">
-            <div class="nav-link no-submenu">
+            <div class="nav-link no-submenu curr-page">
                 <i class="fa-solid fa-house-user"></i>
                 <a href="">dashboard</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
@@ -106,7 +108,7 @@
                 <div class="nav-link-content">
                     <i class="fa-solid fa-users"></i>
                     <p>users</p>
-                    <button class="btn pin">
+                    <button class="mb-btn pin">
                         <i class="fa-solid fa-thumbtack"></i>
                     </button>
                     <i class="fa-solid fa-angle-right submenu-state"></i>
@@ -125,81 +127,87 @@
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-briefcase"></i>
                 <a href="">employees</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-file-circle-check"></i>
                 <a href="">attendance</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-building-user"></i>
                 <a href="">departments</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-cubes"></i>
                 <a href="">projects</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-users-line"></i>
                 <a href="">clients</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-list-check"></i>
                 <a href="">tasks</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-chart-column"></i>
                 <a href="">charts</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
             <div class="nav-link no-submenu">
                 <i class="fa-solid fa-gear"></i>
                 <a href="">settings</a>
-                <button class="btn pin">
+                <button class="mb-btn pin">
                     <i class="fa-solid fa-thumbtack"></i>
                 </button>
             </div>
         </div>
     </nav>
+
+    <!-- main  -->
+
     <main class="main-margin-left side-bar-closed">
         <div class="charts">
-            <div class="card1 card">
+            <div class="card1 mb-card">
                 <span class="title">one &centerdot;</span>
                 <canvas id="Chart1"></canvas>
             </div>
-            <div class="card2 card">
+            <div class="card2 mb-card">
                 <span class="title">two &centerdot;</span>
                 <canvas id="Chart2"></canvas>
             </div>
-            <div class="card3 card">
+            <div class="card3 mb-card">
                 <span class="title">tree &centerdot;</span>
                 <canvas id="Chart3"></canvas>
             </div>
-            <div class="card4 card">
+            <div class="card4 mb-card">
                 <span class="title">four &centerdot;</span>
                 <canvas id="Chart4"></canvas>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/a0929f6f84.js" crossorigin="anonymous"></script>
     <script src="./js/general.js"></script>

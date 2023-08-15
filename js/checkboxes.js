@@ -1,4 +1,4 @@
-const tableRows = document.querySelectorAll('.table tr');
+const tableRows = document.querySelectorAll('.mb-table tr');
 
 if (tableRows)
     tableRows.forEach(tableRow => {

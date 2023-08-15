@@ -134,38 +134,31 @@ h1 {
     padding: 10px;
 }
 
-.reset,
-.submit {
+.mb-reset,
+.mb-submit {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.reset {
+.mb-reset {
     background-color: var(--negative);
     color: white;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 5px;
 }
 
 
-.submit {
+.mb-submit {
     background-color: var(--c1);
     color: white;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 5px;
 }
 
-.reset i,
-.submit i {
+.mb-reset i,
+.mb-submit i {
     color: white;
-}
-
-/* *************************************** */
-
-.disabled {
-    background-color: rgba(128, 128, 128, 0.1);
-    pointer-events: none;
 }
 
 /* *************************************** */

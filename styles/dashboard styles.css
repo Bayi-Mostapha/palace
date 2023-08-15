@@ -7,6 +7,8 @@
 
 .welcome-card h1 {
     color: var(--c1);
+    font-weight: 600;
+    font-size: var(--large);
 }
 
 .day-information {
@@ -106,13 +108,13 @@
 
 .mtitle {
     width: 75%;
-    font-weight: bold;
+    font-weight: 600;
     position: relative;
     z-index: 3;
 }
 
 .mini-card .stats {
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .mini-card1 {
@@ -225,6 +227,10 @@
     color: var(--card-bg-color);
 }
 
+.mini-card:hover .mtitle {
+    color: var(--card-bg-color);
+}
+
 @keyframes pulse1 {
     0% {
         box-shadow: 0 0 0 0px var(--c1-shadow), 0 0 0 0px var(--c1-shadow);
@@ -265,60 +271,6 @@
     }
 }
 
-.table-card1 {
-    width: 100%;
-    overflow: auto;
-}
-
-.table1 {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.table1 th {
-    text-align: left;
-    color: black;
-}
-
-.table1 th {
-    padding: 10px;
-}
-
-.table1 td {
-    padding: 5px 10px;
-}
-
-.table1 tr:nth-of-type(2n) {
-    background-color: var(--table-style);
-}
-
-.table1 .information {
-    display: flex;
-    gap: var(--gap1);
-}
-
-.table1 .text {
-    display: flex;
-    flex-direction: column;
-}
-
-.table1 .text .year {
-    font-size: var(--small);
-}
-
-.table1 tr:hover {
-    color: var(--c2);
-}
-
-.table1 .edit-btn {
-    text-decoration: none;
-    color: black;
-}
-
-.table1 .edit-btn:hover {
-    opacity: 0.9;
-}
-
 .side-card {
     overflow: auto;
 }
@@ -353,6 +305,7 @@
 
 .side-table .text .n-of {
     font-size: var(--small);
+    color: var(--gray-txt);
 }
 
 .side-table tr:hover {
@@ -364,7 +317,7 @@
 .charts {
     display: grid;
     grid-template-columns: 49% 49%;
-    gap: var(--gap1);
+    gap: 2%;
 }
 
 .card1,
@@ -394,12 +347,6 @@
     border-collapse: collapse;
     width: 100%;
     overflow: hidden;
-}
-
-.table2 th {
-    text-align: left;
-    padding: 10px;
-    color: black;
 }
 
 .table2 td {
@@ -493,7 +440,8 @@
     .mini-cards {
         grid-template-columns: 1fr 1fr;
     }
-    .table2{
+
+    .table2 {
         width: 700px;
     }
 }
