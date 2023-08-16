@@ -4,9 +4,9 @@
     --main-bg: rgb(255, 255, 255);
     --body: rgb(245, 247, 251);
     --txt: black;
-    --gray-txt: #999999;
-    --main-color: rgb(48, 84, 245);
-    --main-color-shadow: rgba(48, 84, 245, 0.15);
+    --gray-txt: rgb(162,171,186);
+    --main-color: rgb(74,143,255);
+    --main-color-shadow: rgba(74,143,255, 0.15);
     --light-gray: rgb(236, 237, 248);
     --light-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
 

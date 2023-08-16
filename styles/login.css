@@ -10,6 +10,7 @@ body {
     --c3-shadow2: rgba(93, 211, 158, 0);
 
     padding: 0 !important;
+    overflow: hidden;
 }
 
 main {
@@ -40,9 +41,9 @@ main {
 /* ****************************************** */
 
 .left-container {
-    overflow: hidden;
     position: relative;
-    width: 55%;
+    overflow: hidden;
+    width: 60%;
     height: 100%;
 
     background:
@@ -64,8 +65,8 @@ main {
     left: 15px;
     z-index: 1;
 
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     transform: rotate(-5deg);
 }
 
@@ -82,7 +83,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -110,7 +111,7 @@ main {
     height: 100px;
     width: 100px;
 
-    bottom: 5%;
+    bottom: 15%;
     right: 15%;
     background: var(--c1);
     animation: pulse1 4s infinite;
@@ -149,12 +150,34 @@ main {
     background: var(--c3);
     animation: pulse3 5s infinite;
     animation-delay: 1.5s;
-    transform: rotate(40deg);
+    transform: rotate(17deg);
 }
 
 .blob3 i {
     color: white;
     font-size: 1.7rem;
+}
+
+.info p {
+    text-align: center;
+}
+
+.info .title {
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 600;
+    color: white;
+    padding: 0;
+}
+
+.info .body {
+    margin: -10px auto 0 auto;
+    width: 80%;
+
+    font-weight: 300;
+    font-size: var(--small);
+    color: white;
+    padding: 0;
 }
 
 /* ****************************************** */
@@ -164,13 +187,13 @@ main {
 }
 
 .form-container {
-    width: 45%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    background-color: var(--card-bg-color);
 }
 
 .form-header {
@@ -178,13 +201,23 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+}
+
+.image-container2 {
+    width: 100px;
+    height: 100px;
+}
+
+.form-header h1 {
+    font-size: var(--large);
+    font-weight: 600;
 }
 
 .unimportant {
+    margin-top: -10px;
     color: var(--gray-txt);
     font-size: var(--small);
-    font-weight: 500;
+    font-weight: 300;
 }
 
 form {
@@ -193,12 +226,34 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
 }
 
 .input {
-    margin: 5px 0;
+    position: relative;
     width: 75%;
+}
+
+.input p {
+    position: absolute;
+    color: var(--gray-txt);
+    pointer-events: none;
+    transition: all 300ms;
+}
+
+.input .label {
+    padding: 0 3px;
+    font-size: var(--small);
+    top: -9px;
+    left: 9px;
+    background-color: var(--card-bg-color);
+}
+
+.input .placeholder {
+    padding: 0;
+    font-size: var(--default);
+    top: 7px;
+    left: 12px;
+    background-color: transparent;
 }
 
 input[type="text"],
@@ -215,20 +270,27 @@ input[type="password"] {
 .password input {
     padding-right: 30px;
 }
-
+.password .icon{
+    
+}
 .password .show-hide-pwd {
+    color: var(--gray-txt);
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
 }
 
+input[type="text"]:focus~.show-hide-pwd,
+input[type="password"]:focus~.show-hide-pwd {
+    color: var(--main-color) !important;
+}
+
 .mb-login {
     width: 75%;
     padding: 10px;
-    margin-top: 20px;
 
-    border-radius: 5px;
+    border-radius: 14px;
     background-color: var(--main-color);
     color: white;
     font-size: var(--default);
@@ -266,7 +328,7 @@ input[type="password"] {
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translateY(10px) rotate(11deg);
     }
 
     100% {
@@ -280,7 +342,7 @@ input[type="password"] {
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translateY(10px) rotate(-15deg);
     }
 
     100% {
@@ -294,7 +356,7 @@ input[type="password"] {
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translateY(10px) rotate(15deg);
     }
 
     100% {
@@ -330,4 +392,74 @@ input[type="password"] {
         margin: 5px 0;
         width: 75%;
     }
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    opacity: 0;
+    width: .1px;
+    height: .1px;
+    pointer-events: none;
+}
+
+.slide {
+    position: relative;
+    width: 20%;
+    height: 90%;
+    transition: all 2s;
+}
+
+
+.navigation-manual {
+    position: absolute;
+    z-index: 4;
+
+    width: 100%;
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 1px solid var(--light-gray);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+.manual-btn:hover {
+    background: var(--light-gray);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
 }
