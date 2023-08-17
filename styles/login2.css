@@ -14,7 +14,7 @@ body {
 
 body::before {
     content: "";
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0;
     right: 0;
@@ -191,10 +191,6 @@ input:focus~.show-hide-pwd {
 }
 
 input:focus~.icon {
-    color: var(--main-color) !important;
-}
-
-input:focus~.label {
     color: var(--main-color) !important;
 }
 
