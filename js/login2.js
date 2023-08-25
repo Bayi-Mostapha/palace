@@ -1,4 +1,3 @@
-//prevent default
 const passwords = document.querySelectorAll('.password');
 passwords.forEach(password => {
     const pwdBtn = password.querySelector('.show-hide-pwd');
@@ -14,31 +13,6 @@ passwords.forEach(password => {
         }
     });
 });
-
-// const carouselBtns = document.querySelectorAll('.manual-btn');
-// const radio1 = document.querySelector('#radio1');
-// const radio2 = document.querySelector('#radio2');
-// const radio3 = document.querySelector('#radio3');
-// if (radio1.checked)
-//     document.querySelector('.radio1-l').style.backgroundColor = 'white';
-// radio1.addEventListener('change', () => {
-//     rmBg();
-//     document.querySelector('.radio1-l').style.backgroundColor = 'white';
-// });
-// radio2.addEventListener('change', () => {
-//     rmBg();
-//     document.querySelector('.radio2-l').style.backgroundColor = 'white';
-
-// });
-// radio3.addEventListener('change', () => {
-//     rmBg();
-//     document.querySelector('.radio3-l').style.backgroundColor = 'white';
-// });
-// function rmBg() {
-//     carouselBtns.forEach(carouselBtn => {
-//         carouselBtn.style.backgroundColor = 'transparent';
-//     });
-// }
 
 const inputs = document.querySelectorAll('.input');
 inputs.forEach(input => {
